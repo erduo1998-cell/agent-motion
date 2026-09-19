@@ -13,6 +13,7 @@
     "CONTRIBUTING.md",
     "SECURITY.md",
     ".gitignore",
+    ".gitattributes",
     "package.json",
     "package-lock.json",
     "serve.mjs",
