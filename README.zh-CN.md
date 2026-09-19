@@ -1,28 +1,81 @@
-# Agent Motion · Three.js 口播视频动效
+![Agent Motion — Three.js talking-head films](docs/images/agent-motion-cover.png)
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md)
 
-> **未经事先书面授权不得商用。** [许可证](LICENSE) · [参考库仅包含分析参数与结果，不附参考原视频](reference-library/analysis/README.md)
+[作品对比](#demos) · [制作流程](#workflow) · [开始使用](#start)
 
-**给智能体一段口播、完整字幕和制作要求，让它完成从内容分析到成片的动效包装。**
+**让口播里的想法，成为看得见的画面。**
 
-Agent Motion 将 SRT 分析、素材与人物层、字体排版、空间构图、连续动画、音效混音和成片检查串成制作流程。底层是 **Three.js**；输出 MP4，并保留可继续修改的场景与工程。
+把原片、完整 SRT 和制作要求交给智能体。Agent Motion 完成内容分析、动效包装与成片检查，交付 **MP4 + 可编辑 Three.js 工程**。
 
-## 原片与成片，直接对比
+<sub>非商业使用；商用须事先取得书面授权。 <a href="LICENSE">许可证 ↗</a></sub>
 
-每张 GIF **一分钟，左边原片、右边成片，原片时间同步对应，两侧人物面部均已打码**。混能与绿化按原时间顺序精选拼接，并标出原时码；家校沟通为连续片段。动图无声，不能用于评价音效与混音。
+<a id="demos"></a>
 
-![混能训练开场：原片与成片](docs/media/hybrid-opening.gif)
+## 看见前后的变化
 
-![绿化看品质：一分钟原片与成片对比，面部已打码](docs/media/greening.gif)
+### 01 / 绿化，看见品质
 
-![老师家校沟通：原片与成片](docs/media/communication.gif)
+**60 秒 · 左边原片，右边成片。** 两侧原时码同步对应，人物面部采用贴合脸部的跟踪柔边模糊。预览无声。
 
-来自作者明确认可的三期成片：混能训练、家校沟通与绿化看品质。当前 Skill 后续又完善了人物背景、空间和字体规则，展示片不冒充最新版全部规则的回归结果。[查看版本、选段和测试范围](docs/demo-evidence.md)。
+<p align="center">
+  <img src="docs/media/greening.gif" alt="绿化看品质：左侧原片，右侧动效成片" width="620">
+</p>
+
+<p align="center"><strong><a href="docs/media/greening.mp4">观看 / 下载更清晰的 MP4 ↗</a></strong></p>
+
+#### 再看两种表达
+
+<details>
+
+<summary><strong>02 / 混能训练</strong> — 展开一分钟对比</summary>
+
+<p align="center">
+  <img src="docs/media/hybrid-opening.gif" alt="02 / 混能训练" width="620">
+</p>
+
+<p align="center"><strong><a href="docs/media/hybrid-opening.mp4">观看 / 下载更清晰的 MP4 ↗</a></strong></p>
+
+</details>
+
+<details>
+
+<summary><strong>03 / 家校沟通</strong> — 展开一分钟对比</summary>
+
+<p align="center">
+  <img src="docs/media/communication.gif" alt="03 / 家校沟通" width="620">
+</p>
+
+<p align="center"><strong><a href="docs/media/communication.mp4">观看 / 下载更清晰的 MP4 ↗</a></strong></p>
+
+</details>
+
+三期均来自作者认可的成片。绿化、混能为按原顺序精选的片段，标有原时码；家校沟通为连续片段。历史示例不代表后来每项 Skill 修订均已回归验证。 [版本、选段与检查范围 →](docs/demo-evidence.md)
+
+<a id="workflow"></a>
+
+## 从一段口播，到一部成片
+
+![原片、完整字幕与要求，依次经过内容分析、素材人物、字体空间、连续动画、声音、检查修复，输出MP4和可编辑工程](docs/images/production-flow.png)
+
+**内容分析 → 素材与人物层 → 字体与空间构图 → 连续动画 → 声音 → 检查与修复。**
+
+智能体逐阶段完整读取规则，先做通开场与最难关系段，再由连续作者扩展整片。保留原口播时序，检查实际画面与声音。安装命令和分页工具支撑制作，成片由智能体执行完成。
+
+### 四个设计原则
+
+![四个设计原则：语义、人物、排版、连续运动](docs/images/design-system.png)
+
+- **语义先行** — 动作解释口播含义，证据与原时间保持准确。
+- **人物进入空间** — 同步人物层、可见纵深与二次取景；仅在替换人物原背景时描边。
+- **排版各有角色** — 在真实构图里比较字体，建立主次、可读落点与阅读时间。
+- **运动保持连续** — 让对象与视线接住下一层意思；先验证连续样段，再扩展全片。
+
+<a id="start"></a>
 
 ## 开始使用
 
-准备 **Node.js 22+、Python 3.10+、FFmpeg/ffprobe 和 Chromium**。进入下载的项目目录执行；setup 下载浏览器，不调用付费生成服务。
+准备 **Node.js 22+、Python 3.10+、FFmpeg/ffprobe**，并将后两者配置到 PATH。setup 会下载 Chromium，不调用付费生成服务。以下命令适用于 PowerShell 与 POSIX 终端。
 
 ```sh
 git clone https://github.com/erduo1998-cell/agent-motion.git
@@ -34,47 +87,30 @@ npm test
 npm run smoke
 ```
 
-把原片和完整 SRT 放入 `inputs/`，在智能体里打开项目目录，然后发送：
+将原片和完整 SRT 放进 `inputs/`，在智能体中打开项目目录，发送：
 
 > 先读 AGENTS.md 和本项目两个本地 Skill。根据 inputs/source.mp4 与 inputs/source.srt 完成口播视频动效包装，保留原口播顺序和时间。在 work/my-first-film/ 独立制作，完成内容分析、素材与人物层、字体和空间构图、连续动画、声音和实际成片检查，交付 MP4 及可编辑工程。
 
-运行 `npm run serve`，打开 `http://127.0.0.1:8793/work/my-first-film/` 查看智能体在本次任务创建的影片页面。项目根地址没有预设成片。
+运行 `npm run serve`，打开智能体本次创建的影片页面 `http://127.0.0.1:8793/work/my-first-film/`。服务根地址没有预设成片。
 
-## 多智能体与 Windows 支持
+### 用你熟悉的智能体与系统
 
-**核心流程不依赖 Codex 专属 API。** 不同客户端读取同一份项目 Skill，使用文件、终端、浏览器与媒体检查能力完成制作。
+Codex、Claude Code、Gemini CLI、Cursor、GitHub Copilot 均有项目入口，读取同一套本地 Skill。其他智能体可直接读取 `AGENTS.md`。**核心不依赖 Codex 专属 API。** 宿主需要文件、终端、浏览器与实际视听检查能力。
 
-| 环境 | 已提供的适配 |
-| --- | --- |
-| Codex | AGENTS 与本地 Skill；已有历史制作案例 |
-| Claude Code、Gemini CLI | 专属项目入口，回到同一套规则 |
-| Cursor、GitHub Copilot | 工作区指令入口；使用能执行命令的 Agent 模式 |
-| Windows、macOS、Linux | 统一 Node/Python 工具、路径处理、浏览器准备与三系统 CI 配置 |
-| 其他智能体 | 显式读取 AGENTS.md，具备相同工具能力即可接入 |
+**Windows · macOS · Ubuntu：工具链已实测。** 三系统 × Node 22/24 共六项 CI 均通过安装、测试、发行检查、浏览器诊断及真实 Three.js → H.264 渲染。 [CI ↗](https://github.com/erduo1998-cell/agent-motion/actions/runs/35433570433)
 
-“入口已适配”和“每个模型、系统均已完整实拍验证”分开记录。具体已运行检查、环境要求与剩余原生验证见[兼容性说明](docs/compatibility.md)，不以配置文件存在代替测试结果。
+上述证据验证工具链。完整影片已有 Codex 制作记录；其他客户端入口尚未逐一独立完成整片验证。 [兼容性与实测记录 →](docs/compatibility.md)
 
-## 全流程怎样完成
+## 语言、参考与使用许可
 
-```mermaid
-flowchart LR
-  A[原片 + 完整 SRT + 要求] --> B[内容与时间分析]
-  B --> C[素材与同步人物层]
-  C --> D[字体与空间构图]
-  D --> E[连续动画与衔接]
-  E --> F[声音与渲染]
-  F --> G[实际视听检查与修复]
-  G --> H[MP4 + 可编辑工程]
-```
+提供五语 README，正式 Skill 统一以中文维护。多语言智能体可以按你的语言工作；输出时仍需核对字库、字形、分行和阅读时间，不包含自动配音翻译。
 
-自动化由智能体遵循 Skill 执行：分析、设计、写场景、渲染、检查和修复。分页脚本负责完整读取制作要求，不是任意视频的一键编译器。整片保持连续作者；“支持多种智能体”不等于把每一段拆给不同作者。抠像和可选生成素材根据可用工具与许可准备。
+公开参考库提供 **43 个案例分析、109 个机制时间窗与 5 组教程方法**，仅含文字/JSON 结果，不附原视频、音频、抽帧、缩略图或完整转写。可选生成与抠像根据可用工具及许可准备。 [查看分析结果库 →](reference-library/analysis/README.md)
 
-## 多语种与开源范围
+项目自有代码、Skill、文档与分析采用 **Motion Craft Community License 1.0**：基于 Apache-2.0 条款增加非商业限制的自定义许可，并非标准 Apache-2.0。**未经事先书面授权不得商用。** 字体、依赖保留原许可；Demo 素材不另授权。
 
-提供中、英、日、西、法五语 README；正式 Skill 以中文维护，避免翻译产生多套规则。多语言智能体可读取后按用户语言工作。已有中英文排版方法；其他语言须重新核对字库、分行和阅读时间，不包含自动配音翻译或所有文字系统的排版保证。
+[许可证](LICENSE) · [商业授权](COMMERCIAL-LICENSE.md) · [第三方说明](THIRD_PARTY_NOTICES.md)
 
-公开范围包括 Skill、辅助脚本、精选对比、带许可证的字体库，以及参考库已经整理好的分析参数和结论。参考库只发布文字/JSON分析，不附原视频、音频、抽帧图、缩略图或完整转写。用户原片、历史工程、下载的参考视频、缓存及旧实验快照保留在本地，不进入发行包。
+---
 
-[项目结构](docs/architecture.md) · [兼容性](docs/compatibility.md) · [参与维护](CONTRIBUTING.md) · [开源准备报告](docs/release-readiness.md)
-
-项目自有代码、Skill、文档与参考分析采用 [Motion Craft Community License 1.0](LICENSE)：基于 Apache-2.0 条款增加非商业限制。**未经作者事先书面授权不得商用**，详见[商业授权说明](COMMERCIAL-LICENSE.md)。这是自定义源码可见许可，不是标准 Apache-2.0。第三方字体/依赖保留原许可，Demo 素材不另授权，详见[第三方说明](THIRD_PARTY_NOTICES.md)。
+[项目结构](docs/architecture.md) · [参与维护](CONTRIBUTING.md) · [发行准备](docs/release-readiness.md)

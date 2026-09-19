@@ -16,3 +16,7 @@ Font families: Noto Sans SC, Noto Serif SC, ZCOOL QingKe HuangYou, ZCOOL KuaiLe,
 The Skills cite design research in `.agents/skills/motion-craft/references/sources.md`. Citations are source attribution, not endorsement. Only the project-authored Vane Motion and tutorial analysis, measured parameters, conclusions and source links are distributed under `reference-library/analysis/`. The downloaded source videos, audio, extracted frames, thumbnails, full transcripts, private production history and frozen Impeccable experiments are not distributed. Referenced third-party works are not claimed as project-owned or relicensed. Historical skill snapshots are not runtime dependencies.
 
 The three teaching illustrations bundled in the Motion Craft references (`composition-atlas.png`, `type-tides.png`, `type-time-weight.png`) are identified by their companion text as project-original diagrams and are covered by the project license. This release retains the images; it does not include or promise the historical image-generation scripts.
+
+## README artwork
+
+The cover, production-flow and design-principles images in `docs/images/` are original conceptual illustrations generated with the built-in image tool for this project. They contain no supplied reference-video frames or real-person portraits. They are covered by the project-owned custom noncommercial license; generation prompts and scope are recorded in [the artwork notes](docs/images/PROMPTS.md).

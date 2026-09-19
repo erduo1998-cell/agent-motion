@@ -5,7 +5,7 @@ Prepared on 2026-09-19. The owner authorized a private GitHub upload to `erduo19
 ## Prepared
 
 - Two project-local production Skills, an explicit AGENTS router and thin adapters for Codex, Claude Code, Gemini CLI, Cursor and GitHub Copilot.
-- English, Simplified Chinese, Japanese, Spanish and French README files; one canonical production rule set and a Mermaid workflow diagram.
+- English, Simplified Chinese, Japanese, Spanish and French README files; one canonical production rule set, a generated cover, production-flow illustration and design-principles artwork.
 - Three synchronized before/after GIFs and MP4 companions from three owner-approved films. Excerpt-level checks and source timing are recorded in [demo evidence](demo-evidence.md).
 - Portable Python selection, browser setup/diagnosis, deterministic Three.js browser smoke, software H.264 encoding and local preview serving. No fixed Mac Chrome path, Metal backend or VideoToolbox encoder is required by the shipped runtime.
 - Optional local reference libraries: absent private downloads do not block the published workflow. The open-font library retains all 10 families' license notices.
@@ -14,9 +14,9 @@ Prepared on 2026-09-19. The owner authorized a private GitHub upload to `erduo19
 
 ## Local verification
 
-The five README files were rendered locally in a browser: all three GIFs loaded in each language, desktop layout was inspected and successive screenshot hashes confirmed animation. The Chinese preview was also visually checked at a phone-width viewport. This is a local rendering check, not a live GitHub homepage check.
+The five README files were rendered locally in a browser: the generated cover, flow and design artwork loaded with the three GIF examples in each language. The greenery example leads, and the other two are available in expandable sections with adjacent MP4 links. Desktop layout and animation were inspected. The Chinese preview was also visually checked at a phone-width viewport. GitHub’s Markdown renderer accepted the centered media, images and expandable examples. The rendered HTML was inspected locally at desktop and 390-pixel phone width with no horizontal overflow in any of the five languages. This is a local visual check using GitHub-rendered Markdown, not a logged-in live GitHub homepage check.
 
-All six current Demo files were fully decoded. The three GIFs run for exactly 60 seconds, with both sides face-redacted, and each is below 20 MB. Hybrid/communication GIFs are 496×483 at 6 fps; greenery is 620×597 at 8 fps. MP4 companions are 744 pixels wide, 8 fps and 60 seconds. All are silent. Exact selections and frame counts are recorded in the demo evidence. The 11 font-file checksums and source asset manifest were verified.
+All six current Demo files were fully decoded. The three GIFs run for exactly 60 seconds, with tracked feathered face blur on both sides. Hybrid/communication GIFs are 620×603 at 8 fps; greenery is 620×597 at 8 fps. MP4 companions are 744 pixels wide, 8 fps and 60 seconds. All are silent. Exact selections and frame counts are recorded in the demo evidence. The 11 font-file checksums and source asset manifest were verified.
 
 A fresh allowlisted distribution was checked on macOS arm64 with Node **24.16.0**, Python **3.14**, FFmpeg **8.1.2** and Playwright Chromium. `npm ci --ignore-scripts` installed both locked dependencies from the public registry; `npm run setup` found the matching browser. `npm test` passed all four suites (geometry/handoff, server behavior and boundaries, stage pagination/source validation, and Skill integrity). `npm run doctor` passed all five environment checks. `npm run smoke` rendered Three.js frames, proved deterministic backward seeking, encoded H.264, and verified a 320×180, 12-frame, one-second MP4. The browser cache and host Python/FFmpeg were shared prerequisites; this was a clean source directory, not a fresh OS installation.
 
@@ -47,7 +47,7 @@ The authorized remote operation is creating and uploading the prepared distribut
 
 ## Face-redaction revision / 打码与一分钟展示修订
 
-The owner requested the greenery case and one-minute GIFs. Current public media replace both sides’ face regions with opaque pixel mosaics; source recordings and original production renders remain untouched. Older unredacted demo media and superseded release copies were moved to ignored local working storage and are excluded from the new archive. The media revision leaves rendering runtime code unchanged. A subsequent revision adds the text-only reference analysis library, routes the Skills to it, and applies the requested custom noncommercial license; affected Skill/package checks are rerun.
+The owner requested the greenery case and one-minute GIFs. Following the owner’s visual feedback, current showcase media use closely tracked feathered face blur on both sides; source recordings and original production renders remain untouched. The earlier large pixel mosaics were replaced to preserve the presentation of the film. Older unredacted demo media and superseded release copies were moved to ignored local working storage and are excluded from the new archive. The media revision leaves rendering runtime code unchanged. A subsequent revision adds the text-only reference analysis library, routes the Skills to it, and applies the requested custom noncommercial license; affected Skill/package checks are rerun.
 
 ## Reference analysis and license scope / 参考分析与许可
 
@@ -57,6 +57,12 @@ Negative packaging checks confirmed that a video file, an embedded media data UR
 
 ## Private GitHub verification / 私有上传验证
 
-Repository: [erduo1998-cell/agent-motion](https://github.com/erduo1998-cell/agent-motion), default branch `main`. The GitHub API reported `private: true` and `visibility: private`; an unauthenticated request returned HTTP 404. An independent clone of the initial upload matched all 208 source files by SHA-256 and passed the packaging check. The Windows checkout fix adds `.gitattributes`, bringing the allowlisted source distribution to 209 files.
+Repository: [erduo1998-cell/agent-motion](https://github.com/erduo1998-cell/agent-motion), default branch `main`. The GitHub API reported `private: true` and `visibility: private`; an unauthenticated request returned HTTP 404. An independent clone of the initial upload matched all 208 source files by SHA-256 and passed the packaging check. The Windows checkout fix added `.gitattributes`, bringing that source snapshot to 209 files; the subsequent presentation revision also adds the three generated illustrations and their prompt record.
 
 The original failed Windows jobs are retained as history. The subsequent six-job run above passed with strict Skill hashes unchanged. The repository remains private; publishing it requires a later explicit owner instruction.
+
+## Visual revision / 视觉修订
+
+The owner rejected the earlier oversized opaque face mosaics. All three one-minute comparisons were rebuilt with per-face tracking, tightly fitted feathered ellipses and Gaussian blur; the source videos and original film renders were preserved. Face lighting and head orientation remain visible, while facial details are softened. Tiny background faces are handled with separate local masks. This is not a claim of complete anonymity.
+
+Three original README illustrations were produced with the built-in image-generation tool: the cover, production workflow, and four design principles. [Assets and exact prompts](images/PROMPTS.md) document their conceptual nature and generation instructions. The five README pages use a common editorial layout with translated explanatory text.

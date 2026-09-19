@@ -22,6 +22,6 @@ All files are silent. No music or sound library is distributed. See [selection a
 
 所有文件均无声，不分发音乐或音效库。版本与时间范围见[选段与核验说明](../demo-evidence.md)。
 
-Current comparisons are 60 seconds each and contain opaque face redaction on both source and output. Face masking does not change underlying footage or third-party rights. Superseded unredacted comparison copies are not part of the current distribution.
+Current comparisons are 60 seconds each and use tracked, feathered face blur on both source and output. Face blur does not change underlying footage or third-party rights. Superseded unredacted comparison copies are not part of the current distribution.
 
-当前对比均为60秒，两侧面部均以实心马赛克覆盖；打码不改变原素材权利归属。旧未打码展示副本不进入当前发行包。
+当前对比均为60秒，两侧面部均使用贴合脸部的跟踪柔边模糊；模糊处理不改变原素材权利归属。旧未打码展示副本不进入当前发行包。
