@@ -103,9 +103,11 @@ As of **2026-09-19**:
 | Environment / check | Evidence |
 | --- | --- |
 | macOS arm64 | Local `doctor`, `npm test`, and real Three.js → Chromium → FFmpeg smoke passed; Node 26.4.0 in the working tree and Node 24.16.0 in a fresh allowlisted distribution, Python 3.14, Chromium 153.0.8010.12, FFmpeg 8.1.2 |
-| Windows and Linux | Portable commands/adapters and CI matrix provided; native runs have not yet been executed for this release |
-| Node 24 / 22 | Node 24.16.0 passed clean-distribution installation, tests, doctor and smoke on macOS; Node 22 is configured in CI but has not run locally |
+| Windows, Ubuntu and macOS hosted runners | All six OS × Node 22/24 jobs passed installation, tests, packaging, browser diagnosis and real Three.js → PNG → H.264/FFprobe smoke in [GitHub Actions run 35433570433](https://github.com/erduo1998-cell/agent-motion/actions/runs/35433570433) at commit `013e2d82` |
+| Node 24 / 22 | Both passed on all three hosted operating systems; Node 24.16.0 also passed clean-distribution checks on the local Mac |
 | Codex | Existing local production/testing used Codex; toolchain checks here also ran through Codex |
 | Claude Code / Gemini CLI / Cursor / Copilot | Instruction-file integration supplied and formats checked against official docs; no independent end-to-end film run in those clients yet |
 
-`npm test` covers existing geometry/handoff math, server paths/ranges/security boundaries, stage manifest completeness, pagination/source-change rejection and the current skill file hashes. CI repeats tests, doctor and smoke across Windows, macOS and Ubuntu on Node 22 and 24. This local preparation has not published or executed the GitHub workflow. Do not label an unrun platform or client as empirically verified, or infer film quality from a successful dependency check.
+`npm test` covers existing geometry/handoff math, server paths/ranges/security boundaries, stage manifest completeness, pagination/source-change rejection and the current skill file hashes. CI repeats tests, doctor and smoke across Windows, macOS and Ubuntu on Node 22 and 24. The repository is private. The linked hosted run verifies the toolchain, not a full film in every agent client or every personal computer. Do not infer film quality from a successful dependency check.
+
+The first hosted Windows run exposed Git checkout converting LF to CRLF and breaking the exact Skill hashes. The repository now ships `.gitattributes` to keep text as LF; the hash checks remain strict. A real checkout with `core.autocrlf=true` preserved all 58 Skill files after the fix, and both Windows CI jobs passed. No production Skill content was changed for this fix.
