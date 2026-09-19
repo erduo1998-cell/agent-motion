@@ -10,7 +10,66 @@ These original explanatory illustrations were generated with the built-in image 
 - [Production flow](production-flow.png): video/SRT/brief → content analysis → assets → composition → motion → sound → review → MP4 + editable project. The refinement arrow illustrates a review loop.
 - [Design principles](design-system.png): meaning, person framing, typography/spatial hierarchy, and connected motion.
 
-The diagrams use English labels; each localized README provides accompanying explanatory text. No real portrait or third-party study media was supplied to generation.
+English originals and Simplified Chinese sibling images are available. The Chinese edition localizes all headings and labels; only the brand, technical terms and the illustrative letter A remain in Latin script. No real portrait or third-party study media was supplied to generation.
+
+## Simplified Chinese assets
+
+- [中文封面](agent-motion-cover-zh-CN.png)：保留 Agent Motion 品牌，中文口号为“让口播里的想法，成为看得见的画面。”
+- [中文制作流程](production-flow-zh-CN.png)：原片 / SRT / 制作要求 → 内容分析 → 素材人物 → 场面排版 → 连续动画 → 声音制作 → 检查交付 → MP4 / 可编辑工程，包含修复回路。
+- [中文设计原则](design-system-zh-CN.png)：语义先行、人物进入空间、排版各有角色、运动保持连续。
+
+中文版本于 2026-09-19 使用内置 image_gen 编辑原图生成，保留米白、墨绿、芥末黄和原图形系统。三张成品均逐张视觉核对标题、阶段、标签和说明；设计图第一栏的立体文字经局部修正为单字“意”，避免重叠字形。它们是说明图，不是实际产品截图。原英文图保留。
+
+## Exact Chinese localization prompts
+
+### Chinese cover
+
+```text
+Use case: text-localization.
+Edit target: the provided Agent Motion cover. Produce its Simplified Chinese sibling edition, keeping the original 2:1 composition, warm ivory opaque paper background, near-black forest green typography, muted mustard yellow accents, tactile texture, three sculptural panels, waveform, dimensional A, abstract faceless bust, soft shadows and spacing.
+Keep the large two-line brand title exactly "AGENT" / "MOTION". Replace "Words into motion." with the exact Simplified Chinese tagline "让口播里的想法，成为看得见的画面。" Set this in clean, elegant Chinese typography, two balanced lines if needed within the original left title block, not tiny text. Replace the bottom caption "THREE.JS × CODING AGENTS" with "Three.js × 编程智能体". Preserve the letter A as an abstract typographic graphic. No other English words.
+All Chinese characters and punctuation must be correct and readable. Only localize the text; preserve the established visual identity, panel graphics, layout and atmosphere. Fully opaque edge-to-edge rectangular artwork, no transparent pixels, no browser/mockup, no extra captions or watermarks.
+```
+
+### Chinese production flow
+
+```text
+Use case: text-localization.
+Edit target: provided Agent Motion production-flow illustration. Create its Simplified Chinese edition, preserving the exact original diagram geometry, five-stage order and connectivity, numbered 01–05 stations, input row, return arrow, original icons, warm ivory opaque paper, forest green ink, small mustard accents and subtle shadows. 2:1 landscape.
+Replace ALL English labels with the following exact Chinese text:
+Top title: "从口播到成片"
+Input box: "原片 + SRT + 制作要求"
+Analysis box: "内容分析"
+Stage 01 heading: "素材人物"; subtitle: "素材 + 同步人物层"
+Stage 02 heading: "场面排版"; subtitle: "字体 + 空间构图"
+Stage 03 heading: "连续动画"; subtitle: "动作 + 镜头衔接"
+Stage 04 heading: "声音制作"; subtitle: "原声 + 音效混音"
+Stage 05 heading: "检查交付"; subtitle: "渲染 + 视听检查"
+Return arrow label: "修复"
+Result box: "MP4 + 可编辑工程"
+Bottom-left note: "连续作者，完成整片。"
+Retain the letters SRT in the file icon and A in the spatial-typography illustration. No other English text except MP4. Input leads to content analysis; content analysis leads to 01; stages 01→02→03→04→05; review leads to result, with return arrow to animation for fixes. Content analysis is separate from the five production stages, do not make it one of the numbered five. Chinese headings should be large and perfectly readable, stylish editorial Chinese typography, no cramped text. Exact Chinese wording and correct characters are critical. Only text localization and typographic fitting; preserve all original visual forms and arrow meanings. Fully opaque seamless ivory background, no alpha or checkerboard, no border mockup or watermark.
+```
+
+### Chinese design principles
+
+```text
+Use case: text-localization.
+Edit target: provided Agent Motion design-principles illustration. Create Simplified Chinese sibling, preserving original 2:1 layout, four editorial columns, ordinals 01–04, illustrated waveform/sculptural word, abstract faceless person with reframing inset, dimensional letter A with layered typography, continuous mustard motion path through three planes, warm ivory opaque paper background, forest green, restrained mustard, subtle paper texture and shadows.
+Replace top title with exact "围绕内容，设计画面".
+Column 01: heading "语义先行"; subtitle "让动作跟随口播含义"; replace sculptural English word IDEA with sculptural Chinese word "想法".
+Column 02: heading "人物进入空间"; subtitle "有意识地重新取景".
+Column 03: heading "排版各有角色"; subtitle "先分主次，再做装饰"; the large sculptural A may stay as an abstract typographic illustration.
+Column 04: heading "运动保持连续"; subtitle "让意义在场景间延续".
+No English text other than the single sculptural A. All Chinese characters must be exact, clear and legible at README display width. Match the original hierarchy with attractive, strong Chinese display typography, aligned heading/subtitle baselines and generous negative space. Only localize text and fit Chinese typography; keep visuals, lighting and composition unchanged. Entire rectangular image fully opaque with seamless warm ivory background, no transparent pixels, no extra captions, no watermark or mockup.
+```
+
+### Chinese sculptural-character refinement
+
+```text
+Use case: precise-object-edit. Edit the provided Chinese design-principles diagram. Change ONLY the small ivory typographic sculpture in the FIRST of four columns, immediately to the right of the green waveform. Its Chinese word currently has confusing doubled or stacked letter shapes. Replace it with a clean, minimal, single upright ivory sculptural Chinese character "意", one character only, one clearly readable front face, subtle extrusion backwards and soft studio shadow. No duplicate character, no text beneath or behind it, no extra marks. Preserve the connecting mustard thread from waveform.
+Keep EVERYTHING else unchanged: the exact title "围绕内容，设计画面", all four numbers and headings/subtitles, all other three column illustrations, all colors, layout, spacing, opaque ivory background and shadows. Especially preserve exact column text: "语义先行" / "让动作跟随口播含义"; "人物进入空间" / "有意识地重新取景"; "排版各有角色" / "先分主次，再做装饰"; "运动保持连续" / "让意义在场景间延续". Keep wide 2:1 ratio. Do not change any title or other element.
+```
 
 ## Exact prompt set
 

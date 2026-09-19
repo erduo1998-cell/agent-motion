@@ -5,7 +5,7 @@ Prepared on 2026-09-19. The owner authorized a private GitHub upload to `erduo19
 ## Prepared
 
 - Two project-local production Skills, an explicit AGENTS router and thin adapters for Codex, Claude Code, Gemini CLI, Cursor and GitHub Copilot.
-- English, Simplified Chinese, Japanese, Spanish and French README files; one canonical production rule set, a generated cover, production-flow illustration and design-principles artwork.
+- English, Simplified Chinese, Japanese, Spanish and French README files; one canonical production rule set, and English/Chinese variants of the generated cover, production-flow illustration and design-principles artwork.
 - Three synchronized before/after GIFs and MP4 companions from three owner-approved films. Excerpt-level checks and source timing are recorded in [demo evidence](demo-evidence.md).
 - Portable Python selection, browser setup/diagnosis, deterministic Three.js browser smoke, software H.264 encoding and local preview serving. No fixed Mac Chrome path, Metal backend or VideoToolbox encoder is required by the shipped runtime.
 - Optional local reference libraries: absent private downloads do not block the published workflow. The open-font library retains all 10 families' license notices.
@@ -14,7 +14,9 @@ Prepared on 2026-09-19. The owner authorized a private GitHub upload to `erduo19
 
 ## Local verification
 
-The five README files were rendered locally in a browser: the generated cover, flow and design artwork loaded with the three GIF examples in each language. The greenery example leads, and the other two are available in expandable sections with adjacent MP4 links. Desktop layout and animation were inspected. The Chinese preview was also visually checked at a phone-width viewport. GitHub’s Markdown renderer accepted the centered media, images and expandable examples. The rendered HTML was inspected locally at desktop and 390-pixel phone width with no horizontal overflow in any of the five languages. This is a local visual check using GitHub-rendered Markdown, not a logged-in live GitHub homepage check.
+The five README files use a plain-text project title and six consistently ordered sections: demos, getting started, workflow, compatibility, further reading and license. Setup precedes the explanatory diagrams. Greenery leads the showcase; the other two films, installation checks and design principles are expandable. Covers and demos are centered at 620 pixels; diagrams use the available content width for readable labels. The Chinese README uses Chinese artwork, including in-image labels; other localized pages retain the English artwork with translated explanations.
+
+GitHub’s Markdown renderer was used for the local previews. Chinese and English desktop layouts and the Chinese 390-pixel layout were visually inspected. All five pages loaded all six images with no page-level horizontal overflow at 390 pixels. Navigation and expandable content were exercised in a browser. This is a local visual check of GitHub-rendered Markdown, not a logged-in live GitHub homepage check.
 
 All six current Demo files were fully decoded. The three GIFs run for exactly 60 seconds, with tracked feathered face blur on both sides. Hybrid/communication GIFs are 620×603 at 8 fps; greenery is 620×597 at 8 fps. MP4 companions are 744 pixels wide, 8 fps and 60 seconds. All are silent. Exact selections and frame counts are recorded in the demo evidence. The 11 font-file checksums and source asset manifest were verified.
 
@@ -66,3 +68,10 @@ The original failed Windows jobs are retained as history. The subsequent six-job
 The owner rejected the earlier oversized opaque face mosaics. All three one-minute comparisons were rebuilt with per-face tracking, tightly fitted feathered ellipses and Gaussian blur; the source videos and original film renders were preserved. Face lighting and head orientation remain visible, while facial details are softened. Tiny background faces are handled with separate local masks. This is not a claim of complete anonymity.
 
 Three original README illustrations were produced with the built-in image-generation tool: the cover, production workflow, and four design principles. [Assets and exact prompts](images/PROMPTS.md) document their conceptual nature and generation instructions. The five README pages use a common editorial layout with translated explanatory text.
+
+
+## README hierarchy and Chinese artwork / 排版与中文图片
+
+Following owner feedback, the README was reorganized after inspecting the rendered [Remotion](https://github.com/remotion-dev/remotion#readme) and [Nextra](https://github.com/shuding/nextra#readme) READMEs. The revision uses a single text alignment, compact navigation, early setup instructions and expandable detail instead of multiple heading levels and consecutive full-size artwork blocks. No reference-project art or copy was redistributed.
+
+The built-in image tool produced three Chinese artwork variants. Headings, process labels and explanatory captions were visually checked; project and technology names retain their original spelling. Original English assets remain available. Exact generation and text-correction prompts are recorded with the assets. Runtime code, Skills, showcase media and license terms were unchanged in this presentation revision.
