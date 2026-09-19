@@ -1,0 +1,1552 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-09-19",
+  "language": "zh-CN",
+  "license": "LicenseRef-Motion-Craft-Noncommercial",
+  "scope": "Original analysis only; no third-party media rights granted. Commercial use requires separate written permission.",
+  "evidence_boundary": "Historical analysis, not a new viewing. Source URLs not revalidated. Time windows and colors are approximate; implementation advice is project inference, not recovered source parameters.",
+  "case_count": 43,
+  "effect_window_count": 109,
+  "cases": [
+    {
+      "case_id": "V01",
+      "title_zh": "黑白窄体歌词穿梭与聊天手机衔接·描边叠字版",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=-C1IrekULXE",
+      "duration_seconds": 16.555828,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V01.md",
+      "tags": [
+        "文字",
+        "开场",
+        "空间",
+        "景深",
+        "运动模糊",
+        "转场",
+        "UI",
+        "黑白"
+      ],
+      "effect_windows": [
+        {
+          "name": "相机穿梭关键词雕塑",
+          "start_seconds": 0.25,
+          "end_seconds": 1.667
+        },
+        {
+          "name": "关键词明暗反转和描边回声",
+          "start_seconds": 1.667,
+          "end_seconds": 2.08
+        },
+        {
+          "name": "抽象文字落到手机消息",
+          "start_seconds": 3.5,
+          "end_seconds": 5.5
+        }
+      ]
+    },
+    {
+      "case_id": "V02",
+      "title_zh": "时间摆锤击散九个月与剩余25%的数据隐喻",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=0Mxn45UZw2E",
+      "duration_seconds": 10.05424,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V02.md",
+      "tags": [
+        "正文",
+        "文字",
+        "图表",
+        "空间",
+        "发光",
+        "碰撞",
+        "数据隐喻"
+      ],
+      "effect_windows": [
+        {
+          "name": "把百分比变成一次碰撞",
+          "start_seconds": 1.5,
+          "end_seconds": 2.9
+        },
+        {
+          "name": "用两种重音色区分失去与剩余",
+          "start_seconds": 2.08,
+          "end_seconds": 5.5
+        },
+        {
+          "name": "静态结论与背景余摆并存",
+          "start_seconds": 4,
+          "end_seconds": 10
+        }
+      ]
+    },
+    {
+      "case_id": "V03",
+      "title_zh": "人生不是竞速：奔跑者换色与圆形照片结句版",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=1logZo2iPpY",
+      "duration_seconds": 19.110023,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V03.md",
+      "tags": [
+        "开场",
+        "正文",
+        "人物",
+        "文字",
+        "空间",
+        "转场",
+        "景深",
+        "圆形遮罩"
+      ],
+      "effect_windows": [
+        {
+          "name": "冲线者连续换色",
+          "start_seconds": 5.1,
+          "end_seconds": 6.4
+        },
+        {
+          "name": "终点带弯成路径并引入树",
+          "start_seconds": 6.4,
+          "end_seconds": 7.6
+        },
+        {
+          "name": "烟带旋入照片圆窗",
+          "start_seconds": 14,
+          "end_seconds": 16.5
+        }
+      ]
+    },
+    {
+      "case_id": "V04",
+      "title_zh": "青色双球分裂与模仿行为说明",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=3Gf_8827t7o",
+      "duration_seconds": 20.062041,
+      "width": 1080,
+      "height": 1920,
+      "fps": "24/1",
+      "report": "vanemotion/V04.md",
+      "tags": [
+        "正文",
+        "开场",
+        "文字",
+        "人物",
+        "空间",
+        "发光",
+        "形变"
+      ],
+      "effect_windows": [
+        {
+          "name": "双球分裂说明复制或模仿",
+          "start_seconds": 1.1,
+          "end_seconds": 2.7
+        },
+        {
+          "name": "群体姿态驱动因果说明",
+          "start_seconds": 7.3,
+          "end_seconds": 9.3
+        },
+        {
+          "name": "半实体半粒子的属性比较",
+          "start_seconds": 3.9,
+          "end_seconds": 5.9
+        }
+      ]
+    },
+    {
+      "case_id": "V05",
+      "title_zh": "紫色无脸西装人物、指向手势与品牌横移",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=6ZIGjG9mX0M",
+      "duration_seconds": 9.102222,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V05.md",
+      "tags": [
+        "人物",
+        "空间",
+        "开场",
+        "封面",
+        "转场",
+        "运镜",
+        "发光",
+        "手势引导"
+      ],
+      "effect_windows": [
+        {
+          "name": "人物在海报前建立主题",
+          "start_seconds": 0.3,
+          "end_seconds": 1.4
+        },
+        {
+          "name": "手势和连线为横移提供理由",
+          "start_seconds": 3.167,
+          "end_seconds": 5.5
+        },
+        {
+          "name": "沿地面路径连接两个站位",
+          "start_seconds": 1.4,
+          "end_seconds": 3
+        }
+      ]
+    },
+    {
+      "case_id": "V06",
+      "title_zh": "足球思维：人物卡分开露脑、眼球匹配战术视野",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=C-yZlQXN3rQ",
+      "duration_seconds": 14.071293,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V06.md",
+      "tags": [
+        "正文",
+        "人物",
+        "资料",
+        "转场",
+        "空间",
+        "纹理",
+        "匹配转场",
+        "图解"
+      ],
+      "effect_windows": [
+        {
+          "name": "人物卡中缝展开露出概念对象",
+          "start_seconds": 2.4,
+          "end_seconds": 4.5
+        },
+        {
+          "name": "眼球圆形匹配到战术视域",
+          "start_seconds": 6.5,
+          "end_seconds": 8.5
+        },
+        {
+          "name": "局部脑点拉远到全场",
+          "start_seconds": 10.2,
+          "end_seconds": 13.8
+        }
+      ]
+    },
+    {
+      "case_id": "V07",
+      "title_zh": "人物照片环带：旋转显脸与中心标题的循环",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=ETkuKj-XxAg",
+      "duration_seconds": 22.058957,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V07.md",
+      "tags": [
+        "封面",
+        "开场",
+        "人物",
+        "文字",
+        "空间",
+        "循环",
+        "遮挡"
+      ],
+      "effect_windows": [
+        {
+          "name": "照片带让出中心标题",
+          "start_seconds": 0,
+          "end_seconds": 2.5
+        },
+        {
+          "name": "稳定外框里的短周期循环",
+          "start_seconds": 3.5,
+          "end_seconds": 21.9
+        }
+      ]
+    },
+    {
+      "case_id": "V08",
+      "title_zh": "拉开线幕与数字零的字形接力",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=EjadIKcJPmw",
+      "duration_seconds": 12.097596,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V08.md",
+      "tags": [
+        "开场",
+        "正文",
+        "文字",
+        "转场",
+        "UI",
+        "形变",
+        "匹配转场"
+      ],
+      "effect_windows": [
+        {
+          "name": "指针牵引线幕揭示",
+          "start_seconds": 0.2,
+          "end_seconds": 2
+        },
+        {
+          "name": "数字0到两行字带再回0",
+          "start_seconds": 6.7,
+          "end_seconds": 9.5
+        }
+      ]
+    },
+    {
+      "case_id": "V09",
+      "title_zh": "注意力战场：文字纵深、人物匹配与红笔圈注",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=FG8NB_IMLa4",
+      "duration_seconds": 8.080544,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V09.md",
+      "tags": [
+        "开场",
+        "正文",
+        "文字",
+        "人物",
+        "空间",
+        "景深",
+        "发光",
+        "转场",
+        "纸张",
+        "圈注"
+      ],
+      "effect_windows": [
+        {
+          "name": "文字近景退出让人物中景接管",
+          "start_seconds": 1.4,
+          "end_seconds": 2.9
+        },
+        {
+          "name": "同轴人物与暖闪连接两种语义",
+          "start_seconds": 2.9,
+          "end_seconds": 3.8
+        },
+        {
+          "name": "红笔圈注将视觉冲击收成关键词",
+          "start_seconds": 3.8,
+          "end_seconds": 5.3
+        }
+      ]
+    },
+    {
+      "case_id": "V10",
+      "title_zh": "体育课程广告：剪影换肤、人物描边与赛事包装合集",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=FNj7PMK8SPo",
+      "duration_seconds": 58.932245,
+      "width": 1080,
+      "height": 1920,
+      "fps": "24/1",
+      "report": "vanemotion/V10.md",
+      "tags": [
+        "开场",
+        "封面",
+        "人物",
+        "文字",
+        "分屏",
+        "描边",
+        "资料",
+        "UI"
+      ],
+      "effect_windows": [
+        {
+          "name": "剪影换肤构建姓名卡",
+          "start_seconds": 25.5,
+          "end_seconds": 27.5
+        },
+        {
+          "name": "冻结轮廓接管比赛",
+          "start_seconds": 31,
+          "end_seconds": 32.4
+        },
+        {
+          "name": "实拍屏幕融化溢出",
+          "start_seconds": 12.2,
+          "end_seconds": 14.2
+        }
+      ]
+    },
+    {
+      "case_id": "V11",
+      "title_zh": "艺术与灵魂：画框缩入嘴部、峡谷文字桥",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=FQuqN_1wgN0",
+      "duration_seconds": 12.770975,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V11.md",
+      "tags": [
+        "开场",
+        "正文",
+        "空间",
+        "转场",
+        "人物",
+        "文字",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "画框缩进嘴部的尺度揭示",
+          "start_seconds": 1.3,
+          "end_seconds": 3.8
+        },
+        {
+          "name": "以文字连接两座断崖",
+          "start_seconds": 7.7,
+          "end_seconds": 10.2
+        }
+      ]
+    },
+    {
+      "case_id": "V12",
+      "title_zh": "沿发光淘汰赛树追踪冠军并拉远全图",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=FeDF9ywCCYM",
+      "duration_seconds": 25.031111,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V12.md",
+      "tags": [
+        "图表",
+        "空间",
+        "发光",
+        "拉远",
+        "正文",
+        "路径追踪"
+      ],
+      "effect_windows": [
+        {
+          "name": "跟随一个节点读完整路径",
+          "start_seconds": 0,
+          "end_seconds": 20.5
+        },
+        {
+          "name": "局部解释后拉远总览",
+          "start_seconds": 20.5,
+          "end_seconds": 25
+        },
+        {
+          "name": "发光连接线作导航",
+          "start_seconds": 2,
+          "end_seconds": 18
+        }
+      ]
+    },
+    {
+      "case_id": "V13",
+      "title_zh": "SaaS功能短片：双圆交集、霓虹徽章与星环接力",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=HVTuxncA9JU",
+      "duration_seconds": 19.063583,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V13.md",
+      "tags": [
+        "开场",
+        "正文",
+        "UI",
+        "图标",
+        "发光",
+        "转场",
+        "数据",
+        "运动模糊"
+      ],
+      "effect_windows": [
+        {
+          "name": "双圆交集扩成新场",
+          "start_seconds": 3.8,
+          "end_seconds": 6.3
+        },
+        {
+          "name": "星环收束为进度条",
+          "start_seconds": 12.1,
+          "end_seconds": 14.6
+        },
+        {
+          "name": "中心功能格驱动周围网络",
+          "start_seconds": 6.3,
+          "end_seconds": 8.5
+        }
+      ]
+    },
+    {
+      "case_id": "V14",
+      "title_zh": "财富数字贴纸与钞票扇形翻场",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=ISV9R4fYWik",
+      "duration_seconds": 10.05424,
+      "width": 1080,
+      "height": 1920,
+      "fps": "16/1",
+      "report": "vanemotion/V14.md",
+      "tags": [
+        "封面",
+        "开场",
+        "正文",
+        "人物",
+        "文字",
+        "资料",
+        "转场",
+        "纸张",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "数字纸贴的可见修订",
+          "start_seconds": 0.5,
+          "end_seconds": 2.5
+        },
+        {
+          "name": "钞票扇形覆盖与揭场",
+          "start_seconds": 3.4,
+          "end_seconds": 5.4
+        },
+        {
+          "name": "资料桌面的中央词柱",
+          "start_seconds": 5.6,
+          "end_seconds": 8.3
+        }
+      ]
+    },
+    {
+      "case_id": "V15",
+      "title_zh": "药丸隐喻与黑白反转的观点短片",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=Inbq3t8_TXA",
+      "duration_seconds": 23.127075,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V15.md",
+      "tags": [
+        "开场",
+        "正文",
+        "文字",
+        "转场",
+        "UI",
+        "空间",
+        "匹配转场",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "圆盘到药片的同形语义转场",
+          "start_seconds": 3.5,
+          "end_seconds": 5.5
+        },
+        {
+          "name": "大胶囊前景擦换与词语编辑",
+          "start_seconds": 6.2,
+          "end_seconds": 8.2
+        }
+      ]
+    },
+    {
+      "case_id": "V16",
+      "title_zh": "时间即价值：圆盘翻面与卡片让出目标道路",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=KGYqKhlGI6Y",
+      "duration_seconds": 28.746304,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "report": "vanemotion/V16.md",
+      "tags": [
+        "开场",
+        "正文",
+        "转场",
+        "空间",
+        "文字",
+        "匹配转场",
+        "图标"
+      ],
+      "effect_windows": [
+        {
+          "name": "圆形翻面匹配",
+          "start_seconds": 3.2,
+          "end_seconds": 4.4
+        },
+        {
+          "name": "功能卡移开让出远方道路",
+          "start_seconds": 9.5,
+          "end_seconds": 12
+        }
+      ]
+    },
+    {
+      "case_id": "V17",
+      "title_zh": "相机线框排障与教程局部放大",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=Kf0PRjSM3Jc",
+      "duration_seconds": 51.873379,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V17.md",
+      "tags": [
+        "封面",
+        "UI",
+        "教程",
+        "局部放大",
+        "转场"
+      ],
+      "effect_windows": [
+        {
+          "name": "设置窗口的局部接管",
+          "start_seconds": 33.5,
+          "end_seconds": 45.5
+        },
+        {
+          "name": "红框局部对照",
+          "start_seconds": 22,
+          "end_seconds": 32.5
+        }
+      ]
+    },
+    {
+      "case_id": "V18",
+      "title_zh": "品牌解释片：白底浮层、前景纸币与黑白资料卡",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=KzuKj44a620",
+      "duration_seconds": 40.193741,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V18.md",
+      "tags": [
+        "开场",
+        "封面",
+        "正文",
+        "资料",
+        "空间",
+        "景深",
+        "人物",
+        "转场",
+        "文字",
+        "卡片"
+      ],
+      "effect_windows": [
+        {
+          "name": "纸币前景穿越与中央钱堆落点",
+          "start_seconds": 3.1,
+          "end_seconds": 6.3
+        },
+        {
+          "name": "同容器案例快切与焦点交接",
+          "start_seconds": 19.2,
+          "end_seconds": 28.6
+        },
+        {
+          "name": "浮起资料卡承载论点回调",
+          "start_seconds": 13.4,
+          "end_seconds": 19.2
+        }
+      ]
+    },
+    {
+      "case_id": "V19",
+      "title_zh": "报价被拒：折角大字、信封落桌与人物前景接管",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=Ld5LkPkQodQ",
+      "duration_seconds": 23.312834,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V19.md",
+      "tags": [
+        "开场",
+        "封面",
+        "正文",
+        "文字",
+        "人物",
+        "空间",
+        "景深",
+        "转场",
+        "发光"
+      ],
+      "effect_windows": [
+        {
+          "name": "金额变成可落地的信封",
+          "start_seconds": 0.3,
+          "end_seconds": 2.8
+        },
+        {
+          "name": "人物抠像上移接管历史画面",
+          "start_seconds": 5.5,
+          "end_seconds": 7
+        }
+      ]
+    },
+    {
+      "case_id": "V20",
+      "title_zh": "人脸分片环绕揭示中央称号",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=OwDVLnFG7-M",
+      "duration_seconds": 22.058957,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V20.md",
+      "tags": [
+        "封面",
+        "开场",
+        "人物",
+        "文字",
+        "空间",
+        "循环",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "肖像切片环与固定标题互遮",
+          "start_seconds": 0,
+          "end_seconds": 2.5
+        },
+        {
+          "name": "极简人物循环封面",
+          "start_seconds": 1.5,
+          "end_seconds": 2.5
+        }
+      ]
+    },
+    {
+      "case_id": "V21",
+      "title_zh": "音乐胶囊展开、模块回收与颜色反馈",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=P9qT6XtgSI4",
+      "duration_seconds": 22.453696,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "report": "vanemotion/V21.md",
+      "tags": [
+        "UI",
+        "开场",
+        "转场",
+        "发光",
+        "对象连续",
+        "交互"
+      ],
+      "effect_windows": [
+        {
+          "name": "Logo生长为信息容器",
+          "start_seconds": 1,
+          "end_seconds": 4
+        },
+        {
+          "name": "回收模块并传递颜色",
+          "start_seconds": 5.9,
+          "end_seconds": 8.1
+        },
+        {
+          "name": "光标把抽象收束变成交互",
+          "start_seconds": 15,
+          "end_seconds": 19.5
+        }
+      ]
+    },
+    {
+      "case_id": "V22",
+      "title_zh": "黑白窄体歌词穿梭与聊天手机衔接·实心单词版",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=Q6H_fYhn3x0",
+      "duration_seconds": 16.555828,
+      "width": 1920,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V22.md",
+      "tags": [
+        "文字",
+        "空间",
+        "开场",
+        "运动模糊",
+        "景深",
+        "UI",
+        "转场",
+        "黑白"
+      ],
+      "effect_windows": [
+        {
+          "name": "前后错层的词组交接",
+          "start_seconds": 0.25,
+          "end_seconds": 1.667
+        },
+        {
+          "name": "单词黑白反转",
+          "start_seconds": 1.667,
+          "end_seconds": 2.08
+        },
+        {
+          "name": "消息区域的选择性清晰",
+          "start_seconds": 3.5,
+          "end_seconds": 5.5
+        }
+      ]
+    },
+    {
+      "case_id": "V23",
+      "title_zh": "白底图标旋转跳跃与速度曲线教程",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=Rgkfq5xpiao",
+      "duration_seconds": 59.535964,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V23.md",
+      "tags": [
+        "开场",
+        "Logo",
+        "极简",
+        "运动模糊",
+        "弹跳",
+        "UI"
+      ],
+      "effect_windows": [
+        {
+          "name": "顶点给识别窗口的图标抛起",
+          "start_seconds": 0.33,
+          "end_seconds": 2.17
+        },
+        {
+          "name": "同轨迹换标接力",
+          "start_seconds": 1.83,
+          "end_seconds": 4
+        }
+      ]
+    },
+    {
+      "case_id": "V24",
+      "title_zh": "软件胶囊卡的层条归并与播放头擦除",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=Rvsi6TDsH2M",
+      "duration_seconds": 11.261678,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V24.md",
+      "tags": [
+        "UI",
+        "开场",
+        "正文",
+        "转场",
+        "发光",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "色条归并改变母卡状态",
+          "start_seconds": 5.5,
+          "end_seconds": 8
+        },
+        {
+          "name": "指针拖动播放头擦除",
+          "start_seconds": 9.6,
+          "end_seconds": 11.2
+        }
+      ]
+    },
+    {
+      "case_id": "V25",
+      "title_zh": "脚本整理教程与下载按钮的因果反馈",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=V4NGcJS5uIo",
+      "duration_seconds": 59.768163,
+      "width": 1080,
+      "height": 1920,
+      "fps": "60/1",
+      "report": "vanemotion/V25.md",
+      "tags": [
+        "UI",
+        "正文",
+        "结尾",
+        "发光",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "点击唤醒的文件抽屉",
+          "start_seconds": 52.6,
+          "end_seconds": 54.6
+        },
+        {
+          "name": "教程按钮的局部扫光",
+          "start_seconds": 21.5,
+          "end_seconds": 24.5
+        }
+      ]
+    },
+    {
+      "case_id": "V26",
+      "title_zh": "多面文字建筑与快速旋转读词",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=_WCJ0dAf0qE",
+      "duration_seconds": 8.521723,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V26.md",
+      "tags": [
+        "开场",
+        "正文",
+        "文字",
+        "空间",
+        "转场",
+        "运动模糊",
+        "动态排版"
+      ],
+      "effect_windows": [
+        {
+          "name": "旧词保留为侧面的文字建筑",
+          "start_seconds": 1.4,
+          "end_seconds": 3.4
+        },
+        {
+          "name": "颜色与面积共同标重音",
+          "start_seconds": 4.3,
+          "end_seconds": 7.35
+        },
+        {
+          "name": "清晰落点后的速度模糊退出",
+          "start_seconds": 6.7,
+          "end_seconds": 8.5
+        }
+      ]
+    },
+    {
+      "case_id": "V27",
+      "title_zh": "青光奖杯、球员剪影与夺冠舞台接力",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=bMSnD47XAuk",
+      "duration_seconds": 21.849977,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V27.md",
+      "tags": [
+        "开场",
+        "人物",
+        "空间",
+        "文字",
+        "运动模糊",
+        "发光",
+        "转场",
+        "体育"
+      ],
+      "effect_windows": [
+        {
+          "name": "遮挡柱后揭示人物",
+          "start_seconds": 1.75,
+          "end_seconds": 4.5
+        },
+        {
+          "name": "前景大字反向交接",
+          "start_seconds": 4.5,
+          "end_seconds": 6.9
+        },
+        {
+          "name": "证据照片接住宣言",
+          "start_seconds": 6.9,
+          "end_seconds": 10.75
+        }
+      ]
+    },
+    {
+      "case_id": "V28",
+      "title_zh": "人生不是竞速：终点带换色、空间文字与竖卡结句版",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=bRpEwZ9w6-w",
+      "duration_seconds": 21.060499,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V28.md",
+      "tags": [
+        "开场",
+        "正文",
+        "文字",
+        "空间",
+        "转场",
+        "人物",
+        "景深",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "同一遮罩驱动黑白与带色接管",
+          "start_seconds": 6.2,
+          "end_seconds": 7.7
+        },
+        {
+          "name": "终点带变成下一场空间路线",
+          "start_seconds": 7.7,
+          "end_seconds": 10.5
+        },
+        {
+          "name": "空间散词收束成竖卡结论",
+          "start_seconds": 16.3,
+          "end_seconds": 18
+        }
+      ]
+    },
+    {
+      "case_id": "V29",
+      "title_zh": "球员分屏：一图分成三证据，中央窄带扩成姓名舞台",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=d6EVIGiRWik",
+      "duration_seconds": 12.097596,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V29.md",
+      "tags": [
+        "开场",
+        "正文",
+        "人物",
+        "资料",
+        "分屏",
+        "转场",
+        "文字"
+      ],
+      "effect_windows": [
+        {
+          "name": "递进分屏保留原图身份",
+          "start_seconds": 1,
+          "end_seconds": 4.2
+        },
+        {
+          "name": "中央字幕带扩成完整场景",
+          "start_seconds": 4.9,
+          "end_seconds": 7.4
+        }
+      ]
+    },
+    {
+      "case_id": "V30",
+      "title_zh": "磨砂圆泡展开为玻璃工具条",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=fHZidlnJIV4",
+      "duration_seconds": 18.041905,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V30.md",
+      "tags": [
+        "UI",
+        "开场",
+        "正文",
+        "材质",
+        "形变",
+        "循环",
+        "玻璃"
+      ],
+      "effect_windows": [
+        {
+          "name": "圆形入口连续展开为工具条",
+          "start_seconds": 0.55,
+          "end_seconds": 1.8
+        },
+        {
+          "name": "收起时内容先失真后消失",
+          "start_seconds": 3.2,
+          "end_seconds": 4.5
+        }
+      ]
+    },
+    {
+      "case_id": "V31",
+      "title_zh": "红色霓虹沿圆角界面绕行与局部取景",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=ff9wM-ANse0",
+      "duration_seconds": 20.897959,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V31.md",
+      "tags": [
+        "UI",
+        "发光",
+        "封面",
+        "空间",
+        "转场",
+        "边框扫描"
+      ],
+      "effect_windows": [
+        {
+          "name": "圆角周长的移动霓虹段",
+          "start_seconds": 0,
+          "end_seconds": 20.897959
+        },
+        {
+          "name": "局部细节与整体交替",
+          "start_seconds": 0,
+          "end_seconds": 18
+        }
+      ]
+    },
+    {
+      "case_id": "V32",
+      "title_zh": "创作阻塞：穿过齿轮孔、离开舒适王座走向灯泡",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=hmk9nkwzLrc",
+      "duration_seconds": 10.774059,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V32.md",
+      "tags": [
+        "开场",
+        "正文",
+        "图标",
+        "文字",
+        "空间",
+        "发光",
+        "转场"
+      ],
+      "effect_windows": [
+        {
+          "name": "穿过齿轮孔进入建议",
+          "start_seconds": 2.3,
+          "end_seconds": 4.4
+        },
+        {
+          "name": "王座与灵感底座的同场横移",
+          "start_seconds": 5.6,
+          "end_seconds": 7.1
+        }
+      ]
+    },
+    {
+      "case_id": "V33",
+      "title_zh": "提问白页收成高亮标签与软件轮盘选择",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=jT0zCngmnpM",
+      "duration_seconds": 12.236916,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V33.md",
+      "tags": [
+        "文字",
+        "开场",
+        "正文",
+        "转场",
+        "对象连续",
+        "高亮",
+        "选择器"
+      ],
+      "effect_windows": [
+        {
+          "name": "整页提问压缩为关键词标签",
+          "start_seconds": 1.5,
+          "end_seconds": 4.5
+        },
+        {
+          "name": "候选滚动与指针同向揭晓",
+          "start_seconds": 4.5,
+          "end_seconds": 7.4
+        }
+      ]
+    },
+    {
+      "case_id": "V34",
+      "title_zh": "矿车地表到地下的剖面下移转场",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=k2e8WnvTCiI",
+      "duration_seconds": 46.556009,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V34.md",
+      "tags": [
+        "空间",
+        "转场",
+        "遮挡接管",
+        "资料",
+        "剖面",
+        "下移"
+      ],
+      "effect_windows": [
+        {
+          "name": "地层作为空间连续桥",
+          "start_seconds": 6.25,
+          "end_seconds": 11.5
+        },
+        {
+          "name": "冷亮到暖暗的地点揭示",
+          "start_seconds": 8,
+          "end_seconds": 15.5
+        },
+        {
+          "name": "结果与空间分解并列",
+          "start_seconds": 0,
+          "end_seconds": 6.25
+        }
+      ]
+    },
+    {
+      "case_id": "V35",
+      "title_zh": "从襁褓到街景的窗框穿越",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=kOoAnPnb9ME",
+      "duration_seconds": 20.944399,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V35.md",
+      "tags": [
+        "开场",
+        "正文",
+        "人物",
+        "空间",
+        "转场",
+        "推镜",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "背影掠过连接人生阶段",
+          "start_seconds": 7.2,
+          "end_seconds": 9.2
+        },
+        {
+          "name": "窗格扩张引导室内到室外",
+          "start_seconds": 12,
+          "end_seconds": 14
+        }
+      ]
+    },
+    {
+      "case_id": "V36",
+      "title_zh": "悬挂职业道具摆动擦换人物标题",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=mWhxJPiizXI",
+      "duration_seconds": 48.018866,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V36.md",
+      "tags": [
+        "封面",
+        "开场",
+        "人物",
+        "文字",
+        "空间",
+        "遮挡接管",
+        "循环"
+      ],
+      "effect_windows": [
+        {
+          "name": "道具摆动驱动文字擦换",
+          "start_seconds": 0.2,
+          "end_seconds": 2.2
+        },
+        {
+          "name": "同构海报的色彩换章",
+          "start_seconds": 31.5,
+          "end_seconds": 33.5
+        }
+      ]
+    },
+    {
+      "case_id": "V37",
+      "title_zh": "街头人物收为手中相框再转向逆光剪影",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=me3sFZCXxlg",
+      "duration_seconds": 15.975329,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V37.md",
+      "tags": [
+        "封面",
+        "开场",
+        "正文",
+        "人物",
+        "文字",
+        "空间",
+        "转场",
+        "拉镜",
+        "遮挡接管"
+      ],
+      "effect_windows": [
+        {
+          "name": "身后大字与人物保持前后关系",
+          "start_seconds": 3.4,
+          "end_seconds": 5.3
+        },
+        {
+          "name": "整幅场景缩回手中相框",
+          "start_seconds": 5,
+          "end_seconds": 7.5
+        },
+        {
+          "name": "近黑肩背把暖室内接到逆光场",
+          "start_seconds": 8.5,
+          "end_seconds": 10.5
+        }
+      ]
+    },
+    {
+      "case_id": "V38",
+      "title_zh": "温度曲线：端点、投影线与读数联动",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=nkcbLo4DaYE",
+      "duration_seconds": 57.446168,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V38.md",
+      "tags": [
+        "图表",
+        "正文",
+        "UI",
+        "极简",
+        "数据联动"
+      ],
+      "effect_windows": [
+        {
+          "name": "端点驱动曲线与坐标读数",
+          "start_seconds": 0.3,
+          "end_seconds": 6
+        },
+        {
+          "name": "灰色未来轨迹与清晰终点停留",
+          "start_seconds": 2.5,
+          "end_seconds": 7.3
+        }
+      ]
+    },
+    {
+      "case_id": "V39",
+      "title_zh": "剪辑像烹饪：时间线翻面、道具接力与窄条换场",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=pAZQ-L7skFY",
+      "duration_seconds": 8.080544,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V39.md",
+      "tags": [
+        "开场",
+        "正文",
+        "文字",
+        "空间",
+        "转场",
+        "UI",
+        "图标",
+        "匹配转场"
+      ],
+      "effect_windows": [
+        {
+          "name": "编辑时间线旋成窄带退出烹饪场",
+          "start_seconds": 0,
+          "end_seconds": 1.5
+        },
+        {
+          "name": "同黑场锅与时钟横向接力",
+          "start_seconds": 1.5,
+          "end_seconds": 2.5
+        },
+        {
+          "name": "窄带换色转成缺少一味的结句",
+          "start_seconds": 3.5,
+          "end_seconds": 5.5
+        }
+      ]
+    },
+    {
+      "case_id": "V40",
+      "title_zh": "剪辑时间线化作彩色高速路",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=p_zd6TbrFcc",
+      "duration_seconds": 30.441361,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V40.md",
+      "tags": [
+        "开场",
+        "正文",
+        "空间",
+        "推镜",
+        "循环",
+        "UI",
+        "发光"
+      ],
+      "effect_windows": [
+        {
+          "name": "编辑轨道的透视道路",
+          "start_seconds": 0,
+          "end_seconds": 7.5
+        },
+        {
+          "name": "终点偏航变交互闭环",
+          "start_seconds": 7.8,
+          "end_seconds": 10.3
+        }
+      ]
+    },
+    {
+      "case_id": "V41",
+      "title_zh": "青色文件夹喷出紫金光束与创作工具图标",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=rglfuEehdSY",
+      "duration_seconds": 11.052698,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V41.md",
+      "tags": [
+        "开场",
+        "图标",
+        "对象连续",
+        "发光",
+        "能力展示",
+        "转场"
+      ],
+      "effect_windows": [
+        {
+          "name": "容器释放能力阵列",
+          "start_seconds": 1.9,
+          "end_seconds": 3.5
+        },
+        {
+          "name": "先回收内容再关闭通道",
+          "start_seconds": 3.5,
+          "end_seconds": 4.5
+        }
+      ]
+    },
+    {
+      "case_id": "V42",
+      "title_zh": "登月资料穿入与头盔反射的连续纪录片",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=t5rLzpXZ5o8",
+      "duration_seconds": 47.391927,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V42.md",
+      "tags": [
+        "开场",
+        "正文",
+        "资料",
+        "人物",
+        "转场",
+        "空间",
+        "推镜",
+        "拉镜",
+        "纸张",
+        "匹配转场"
+      ],
+      "effect_windows": [
+        {
+          "name": "从资料照片进入场景",
+          "start_seconds": 5.8,
+          "end_seconds": 7.8
+        },
+        {
+          "name": "旧画面成为新报纸内图",
+          "start_seconds": 18,
+          "end_seconds": 20
+        },
+        {
+          "name": "反射面回收整幅画面",
+          "start_seconds": 33,
+          "end_seconds": 35.5
+        },
+        {
+          "name": "前景人物遮挡接管",
+          "start_seconds": 27.2,
+          "end_seconds": 29
+        }
+      ]
+    },
+    {
+      "case_id": "V43",
+      "title_zh": "SaaS释义、眼睛图标与圆形接管的蓝色样片",
+      "author": "Vane Motion",
+      "source_url": "https://www.youtube.com/watch?v=ythRPCzx4e8",
+      "duration_seconds": 24.427392,
+      "width": 1080,
+      "height": 1920,
+      "fps": "30/1",
+      "report": "vanemotion/V43.md",
+      "tags": [
+        "开场",
+        "文字",
+        "UI",
+        "发光",
+        "转场",
+        "形状匹配",
+        "图标"
+      ],
+      "effect_windows": [
+        {
+          "name": "缩写展开为释义",
+          "start_seconds": 0.3,
+          "end_seconds": 4.5
+        },
+        {
+          "name": "瞳孔接力到数据圆环",
+          "start_seconds": 14,
+          "end_seconds": 15.6
+        },
+        {
+          "name": "圆心扩张为浅底页面",
+          "start_seconds": 19,
+          "end_seconds": 21
+        }
+      ]
+    }
+  ],
+  "tutorial": {
+    "id": "talking-head-methods",
+    "report": "tutorial/talking-head-methods.md",
+    "source_url": null,
+    "creator": null,
+    "source_status": "Original public URL and creator not recorded in existing research; no attribution invented.",
+    "recording_duration_seconds": 419.53,
+    "time_basis": "research screen recording, not original publication timeline",
+    "method_groups": [
+      {
+        "id": "A",
+        "start_seconds": 0,
+        "end_seconds": 102
+      },
+      {
+        "id": "B",
+        "start_seconds": 102,
+        "end_seconds": 155
+      },
+      {
+        "id": "C",
+        "start_seconds": 155,
+        "end_seconds": 243
+      },
+      {
+        "id": "D",
+        "start_seconds": 259,
+        "end_seconds": 343
+      },
+      {
+        "id": "E",
+        "start_seconds": 343,
+        "end_seconds": 419.53
+      }
+    ]
+  }
+}

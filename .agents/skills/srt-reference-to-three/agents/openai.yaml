@@ -1,0 +1,4 @@
+interface:
+  display_name: "SRT 与参考视频制作"
+  short_description: "理解 SRT、提炼重点与素材，精做海报式开场动画并结合参考制作 Three.js 成片"
+  default_prompt: "请使用 $srt-reference-to-three，结合我提供的 SRT、视频参考和已有素材，设计有吸引力的开场动画，制作完整的 Three.js 视频，并按内容组织重点、镜头与声音。"

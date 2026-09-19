@@ -1,0 +1,236 @@
+[
+  {
+    "text": "01 / TYPE STUDY",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "让复杂",
+    "font": "notosanssc",
+    "weight": 900,
+    "missing": []
+  },
+  {
+    "text": "变清楚",
+    "font": "notosanssc",
+    "weight": 900,
+    "missing": []
+  },
+  {
+    "text": "MAKE IT CLEAR",
+    "font": "bebasneue",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "01  特黑冲击 / 语义字组叠排",
+    "font": "notosanssc",
+    "weight": 500,
+    "missing": []
+  },
+  {
+    "text": "Noto Sans SC 900 + Bebas Neue 400",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "02 / TYPE STUDY",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "让复杂",
+    "font": "notoserifsc",
+    "weight": 800,
+    "missing": []
+  },
+  {
+    "text": "变清楚",
+    "font": "notoserifsc",
+    "weight": 800,
+    "missing": []
+  },
+  {
+    "text": "MAKE COMPLEX IDEAS CLEAR",
+    "font": "barlowcondensed",
+    "weight": 700,
+    "missing": []
+  },
+  {
+    "text": "02  宋黑对比 / 编辑式留白",
+    "font": "notosanssc",
+    "weight": 500,
+    "missing": []
+  },
+  {
+    "text": "Noto Serif SC 800 + Noto Sans SC 500",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "03 / TYPE STUDY",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "让复杂",
+    "font": "zcoolqingkehuangyou",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "变清楚",
+    "font": "zcoolqingkehuangyou",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "03",
+    "font": "barlowcondensed",
+    "weight": 700,
+    "missing": []
+  },
+  {
+    "text": "MAKE IT",
+    "font": "barlowcondensed",
+    "weight": 700,
+    "missing": []
+  },
+  {
+    "text": "CLEAR",
+    "font": "barlowcondensed",
+    "weight": 700,
+    "missing": []
+  },
+  {
+    "text": "03  圆角中文 / 窄体数字",
+    "font": "notosanssc",
+    "weight": 500,
+    "missing": []
+  },
+  {
+    "text": "ZCOOL QingKe HuangYou 400 + Barlow 700",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "04 / TYPE STUDY",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "讓複雜",
+    "font": "huninn",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "變清楚",
+    "font": "huninn",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "Make it clear.",
+    "font": "nunito",
+    "weight": 800,
+    "missing": []
+  },
+  {
+    "text": "04  圓體親和 / 留出呼吸",
+    "font": "huninn",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "jf open-huninn 2.1 / 400 + Nunito 800",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "05 / TYPE STUDY",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "让复杂",
+    "font": "mashanzheng",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "变清楚",
+    "font": "mashanzheng",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "MAKE IT CLEAR",
+    "font": "barlowcondensed",
+    "weight": 700,
+    "missing": []
+  },
+  {
+    "text": "字",
+    "font": "notoserifsc",
+    "weight": 700,
+    "missing": []
+  },
+  {
+    "text": "05  书写情绪 / 笔势与重音",
+    "font": "notosanssc",
+    "weight": 500,
+    "missing": []
+  },
+  {
+    "text": "Ma Shan Zheng 400 + Noto Sans SC 500",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "06 / TYPE STUDY",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "让复杂",
+    "font": "smileysans",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "变清楚",
+    "font": "smileysans",
+    "weight": 400,
+    "missing": []
+  },
+  {
+    "text": "MAKE IT CLEAR",
+    "font": "barlowcondensed",
+    "weight": 700,
+    "missing": []
+  },
+  {
+    "text": "06  美术字动势 / 原生窄斜体",
+    "font": "notosanssc",
+    "weight": 500,
+    "missing": []
+  },
+  {
+    "text": "Smiley Sans Oblique 400 + Barlow 700",
+    "font": "barlowcondensed",
+    "weight": 400,
+    "missing": []
+  }
+]

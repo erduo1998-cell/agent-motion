@@ -1,0 +1,507 @@
+{
+  "version": 1,
+  "purpose": "Exact source sections by production phase; no per-film completion ledger. All applicable stage entries must be read before work. Modules are selected by declared task/implementation before use, not by later user complaints.",
+  "stages": {
+    "srt": {
+      "title": "SRT 全文分析与制作输入",
+      "next": "assets",
+      "finish": "完成并交付一份可直接用于制作的内容分析产物，沿用已有文件。制作已授权时先让制作阶段完整读取该产物，再进入 assets；用户只要求分析则到此结束。",
+      "entries": [
+        {
+          "file": "../srt-reference-to-three/references/production-foundations.md",
+          "sections": [
+            "@intro",
+            "接住输入与本次范围"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/semantic-planning.md"
+        },
+        {
+          "file": "../srt-reference-to-three/references/production.md",
+          "sections": [
+            "@intro",
+            "只记录会影响制作的内容"
+          ]
+        }
+      ]
+    },
+    "assets": {
+      "title": "素材、原景与人物准备",
+      "next": "composition",
+      "finish": "先完整接收内容分析，准备真实素材和同步人物层；明确每段是否保留人物原背景，原景禁描边、换背景才描边。核对源直边、目标窗口的可用取景与局部出框范围；仅复用本任务合格素材。完整来源规则优先于一句完成提示。",
+      "entries": [
+        {
+          "file": "references/production-foundations.md",
+          "sections": [
+            "@intro",
+            "本项目使用与交接",
+            "先接住真实任务"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/reference-and-assets.md"
+        },
+        {
+          "file": "../srt-reference-to-three/references/production-foundations.md",
+          "sections": [
+            "口播空间制作的必选基础"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/talking-head-lessons.md",
+          "sections": [
+            "@intro",
+            "参考分工与人物层",
+            "满幅构图与人物调度"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        },
+        {
+          "file": "references/talking-head-motion-patterns.md",
+          "sections": [
+            "@intro",
+            "M01 先定可读终态，再反推进入状态",
+            "M02 将轮廓变化、内部取景与容器移动分开",
+            "M05 人物出框只增加需要的轮廓"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/production.md",
+          "sections": [
+            "复用实际工程"
+          ]
+        }
+      ]
+    },
+    "composition": {
+      "title": "场面、空间、字体与文字排版",
+      "next": "animation",
+      "finish": "完整读取本阶段与适用模块，建立主焦点及前后空间关系；用真实内容扩展字体候选并查看代表构图。人物窗口必须重新居中取景并有3D悬浮层次，原景/换景描边条件正确。开场与最难关系构图成立后进入 animation，不先把全片排成静态定稿。",
+      "entries": [
+        {
+          "file": "references/production-foundations.md",
+          "sections": [
+            "把想法变成能判断的东西",
+            "各类画面的实现要求"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/production-foundations.md",
+          "sections": [
+            "从内容推进到实际画面",
+            "口播包装与实测经验"
+          ]
+        },
+        {
+          "file": "references/content-to-picture.md"
+        },
+        {
+          "file": "references/film-direction.md"
+        },
+        {
+          "file": "references/film-grammar.md"
+        },
+        {
+          "file": "references/direction-before-code.md"
+        },
+        {
+          "file": "references/scene-craft.md"
+        },
+        {
+          "file": "references/content-and-layout.md"
+        },
+        {
+          "file": "references/space-camera.md"
+        },
+        {
+          "file": "references/composition-rig.md"
+        },
+        {
+          "file": "references/screen-score.md"
+        },
+        {
+          "file": "references/implementation-choices.md"
+        },
+        {
+          "file": "references/visual-decisions.md",
+          "sections": [
+            "@intro",
+            "用同一画面回答同一个问题",
+            "先解决会贯穿整片的关系"
+          ]
+        },
+        {
+          "file": "references/sequence-rhythm.md",
+          "sections": [
+            "@intro",
+            "一条时间线协调五件事",
+            "先画空间关系，再选镜头",
+            "按声音条件建立节奏",
+            "跨场景选择重点，不把一种审美套遍所有作品"
+          ]
+        },
+        {
+          "file": "references/typography-cjk-latin.md"
+        },
+        {
+          "file": "references/typography-poster-pairings.md",
+          "sections": [
+            "@intro",
+            "先把字体当成设计决策",
+            "已核验、可落地的组合",
+            "超大字布局的执行方法",
+            "字体如何影响动画",
+            "文件、许可与可获取性",
+            "最小而真实的字体检查"
+          ]
+        },
+        {
+          "file": "references/layout.md"
+        },
+        {
+          "file": "../srt-reference-to-three/references/opening-design.md",
+          "sections": [
+            "@intro",
+            "开场承担什么",
+            "先定主画面，再设计如何抵达",
+            "可选择的排版结构",
+            "完成判断"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/packaging-pattern-selection.md"
+        },
+        {
+          "file": "references/talking-head-motion-patterns.md",
+          "sections": [
+            "M08 材料和排版按职责适配"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/talking-head-lessons.md",
+          "sections": [
+            "声音覆盖与力度分开设计"
+          ]
+        }
+      ]
+    },
+    "animation": {
+      "title": "动画、镜头、数据与连续衔接",
+      "next": "sound",
+      "finish": "至此完整读完动画规则后才开始正式编排；所用模块也须读全。先做通开场和最难关系段的揭示、阅读及接入相邻内容，实际查看连续过程并修好，再逐语义段一起完成构图、动作与衔接，扩展完整时间线；不能读第一页就写整片或给全片静态页套统一进退场。试做与修订在同一工程。纸张展开先完整读 paper-opening；标题交接函数先读 title-handoff。",
+      "entries": [
+        {
+          "file": "references/space-camera.md",
+          "sections": [
+            "本项目以空间组织画面",
+            "S04 光影和清晰范围支持关系"
+          ]
+        },
+        {
+          "file": "references/production-foundations.md",
+          "sections": [
+            "让作者完成制作"
+          ]
+        },
+        {
+          "file": "references/motion.md"
+        },
+        {
+          "file": "references/twelve-principles.md"
+        },
+        {
+          "file": "references/transition-construction.md"
+        },
+        {
+          "file": "references/transitions.md"
+        },
+        {
+          "file": "references/choreography-patterns.md"
+        },
+        {
+          "file": "references/visual-decisions.md",
+          "sections": [
+            "判断动作需要时间证据"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/semantic-planning.md",
+          "sections": [
+            "场景与节拍"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/talking-head-lessons.md",
+          "sections": [
+            "页内推进与段落衔接"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        },
+        {
+          "file": "references/talking-head-motion-patterns.md",
+          "sections": [
+            "M03 将拖动对象、边界与揭示绑定到一个事件",
+            "M04 用同一对象完成总览到详情的交接",
+            "M06 错峰与缓动服务信息次序",
+            "M07 将效果限制在实际运动层",
+            "在当前工程中怎样落地"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        }
+      ]
+    },
+    "sound": {
+      "title": "声音制作与混音",
+      "next": "review",
+      "finish": "按本片原声/音乐条件制作实际音轨，检查语义落点、动作声覆盖、力度与音色，保留一份有效原声。明确无声时不新增声音；只改声音则保留已确认画面。结果写入现有音频/工程，直接进入整片检查。",
+      "entries": [
+        {
+          "file": "../srt-reference-to-three/references/semantic-planning.md",
+          "sections": [
+            "原时间与声音落点"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/talking-head-lessons.md",
+          "sections": [
+            "声音覆盖与力度分开设计"
+          ]
+        }
+      ]
+    },
+    "review": {
+      "title": "完整成片总检查与交付",
+      "finish": "检查实际交付文件完整正常速度预览及有声任务音轨。核对原景禁描边/换景才描边、卡片悬浮、人物居中与头颈完整、扩展字体试排、全文与连续动作。发现问题先修复；必要视听未完成只能交付待检查预览。沿用当前产物，不新建台账。",
+      "entries": [
+        {
+          "file": "references/space-camera.md",
+          "sections": [
+            "本项目以空间组织画面",
+            "S04 光影和清晰范围支持关系"
+          ]
+        },
+        {
+          "file": "references/talking-head-motion-patterns.md",
+          "sections": [
+            "M02 将轮廓变化、内部取景与容器移动分开",
+            "M05 人物出框只增加需要的轮廓"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/talking-head-lessons.md",
+          "sections": [
+            "参考分工与人物层"
+          ],
+          "kinds": [
+            "talking-head"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/production.md",
+          "sections": [
+            "动态验证与完成"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/talking-head-lessons.md",
+          "sections": [
+            "修订与交付"
+          ]
+        },
+        {
+          "file": "references/verification.md"
+        },
+        {
+          "file": "references/visual-decisions.md",
+          "sections": [
+            "修改也需要取舍"
+          ]
+        },
+        {
+          "file": "references/sequence-rhythm.md",
+          "sections": [
+            "整段复看时要回答"
+          ]
+        },
+        {
+          "file": "references/sources.md",
+          "sections": [
+            "使用证据时不要越界"
+          ]
+        }
+      ]
+    }
+  },
+  "modules": {
+    "three-framing": {
+      "trigger": "在采用 Three.js 取景适配器/透视求解前",
+      "entries": [
+        {
+          "file": "references/three-framing-adapter.md"
+        },
+        {
+          "file": "references/framing-api.md"
+        },
+        {
+          "file": "references/coordinate-binding.md"
+        }
+      ]
+    },
+    "coordinate-binding": {
+      "trigger": "在采用 2D/3D 构图绑定或 fit/rig API 前",
+      "entries": [
+        {
+          "file": "references/coordinate-binding.md"
+        },
+        {
+          "file": "references/framing-api.md"
+        }
+      ]
+    },
+    "ui-surface": {
+      "trigger": "在制作实体 UI 表面前（包括非口播的 UI 影片）",
+      "entries": [
+        {
+          "file": "references/ui-surface-adapter.md"
+        }
+      ]
+    },
+    "title-handoff": {
+      "trigger": "在使用同位置标题交接采样器前",
+      "entries": [
+        {
+          "file": "references/handoff-helper.md"
+        }
+      ]
+    },
+    "engine": {
+      "trigger": "在适配/切换宿主或采用跨引擎坐标合同前",
+      "entries": [
+        {
+          "file": "references/engine-mapping.md"
+        }
+      ]
+    },
+    "implementation-library": {
+      "trigger": "在借用已安装外部实现资源前；不自动授权委派",
+      "entries": [
+        {
+          "file": "references/implementation-resources.md"
+        }
+      ]
+    },
+    "paper-opening": {
+      "trigger": "在制作纸张展开开场前",
+      "entries": [
+        {
+          "file": "../srt-reference-to-three/references/opening-design.md",
+          "sections": [
+            "纸团展开的实现判断"
+          ]
+        }
+      ]
+    },
+    "poster-examples": {
+      "trigger": "在借鉴研究中的海报构图或开场案例前；需同时实际看选定图像",
+      "entries": [
+        {
+          "file": "references/typography-poster-pairings.md",
+          "sections": [
+            "真实海报观察与本项目转译",
+            "本次资产和验证边界"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/opening-design.md",
+          "sections": [
+            "两个主题的应用示例",
+            "可复查的外部来源"
+          ]
+        }
+      ]
+    },
+    "type-examples": {
+      "trigger": "新做字形主导包装/MG时，在排版前读全文并查看与当前画幅接近的例图；另一组供对照",
+      "entries": [
+        {
+          "file": "references/type-visual-examples.md"
+        }
+      ]
+    },
+    "composition-atlas": {
+      "trigger": "在采用构图图谱作为设计参考前；同时实际查看例图",
+      "entries": [
+        {
+          "file": "references/atlas-notes.md"
+        }
+      ]
+    },
+    "planning-examples": {
+      "trigger": "在借鉴对应题型范例前；示例不是新的必填记录",
+      "entries": [
+        {
+          "file": "references/planning-examples.md"
+        }
+      ]
+    },
+    "sources": {
+      "trigger": "在追溯原理、来源或迁移历史时；不要求每片联网访问全部来源",
+      "entries": [
+        {
+          "file": "references/sources.md",
+          "sections": [
+            "@intro",
+            "排版与文字",
+            "运动、编舞与转场",
+            "空间、镜头与引擎",
+            "表现力与连续叙事补充"
+          ]
+        },
+        {
+          "file": "../srt-reference-to-three/references/production-foundations.md",
+          "sections": [
+            "与原 H3 流程的关系"
+          ]
+        }
+      ]
+    },
+    "ui-interaction": {
+      "trigger": "出现容器变化、裁切揭示、拖拽、选择、总览到详情或轮播时，在设计/实现前读；包括纯二维和非口播 UI",
+      "entries": [
+        {
+          "file": "references/talking-head-motion-patterns.md"
+        }
+      ]
+    },
+    "reference-reproduction": {
+      "trigger": "用户要求精确/逐帧复刻参考时，在 assets 查看、解码和分析参考之前完整读；使用原生帧率与原帧事件",
+      "entries": [
+        {
+          "file": "references/production-foundations.md",
+          "sections": [
+            "让作者完成制作"
+          ]
+        }
+      ]
+    }
+  }
+}

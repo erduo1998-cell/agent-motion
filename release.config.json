@@ -1,0 +1,34 @@
+{
+  "files": [
+    "README.md",
+    "README.zh-CN.md",
+    "README.ja.md",
+    "README.es.md",
+    "README.fr.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    ".gitignore",
+    "package.json",
+    "package-lock.json",
+    "serve.mjs",
+    "release.config.json",
+    "inputs/README.md",
+    "COMMERCIAL-LICENSE.md",
+    "NOTICE"
+  ],
+  "directories": [
+    ".agents",
+    ".cursor",
+    ".github",
+    "scripts",
+    "tests",
+    "docs",
+    "reference-library/typography",
+    "reference-library/analysis"
+  ]
+}

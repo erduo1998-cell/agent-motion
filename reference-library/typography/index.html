@@ -1,0 +1,20 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>六组中文海报字型样张 · Motion Craft 候选研究</title>
+<style>
+@font-face{font-family:TestSans;src:url('fonts/notosanssc/NotoSansSC[wght].ttf');font-weight:100 900}
+@font-face{font-family:TestSerif;src:url('fonts/notoserifsc/NotoSerifSC[wght].ttf');font-weight:200 900}
+@font-face{font-family:TestHuang;src:url('fonts/zcoolqingkehuangyou/ZCOOLQingKeHuangYou-Regular.ttf');font-weight:400}
+@font-face{font-family:TestHuninn;src:url('fonts/huninn/jf-openhuninn-2.1.ttf');font-weight:400}
+@font-face{font-family:TestMa;src:url('fonts/mashanzheng/MaShanZheng-Regular.ttf');font-weight:400}
+@font-face{font-family:TestSmiley;src:url('fonts/smileysans/SmileySans-Oblique.ttf');font-weight:400}
+@font-face{font-family:TestNunito;src:url('fonts/nunito/Nunito[wght].ttf');font-weight:200 1000}
+@font-face{font-family:TestBarlow;src:url('fonts/barlowcondensed/BarlowCondensed-Bold.ttf');font-weight:700}
+@font-face{font-family:TestBebas;src:url('fonts/bebasneue/BebasNeue-Regular.ttf');font-weight:400}
+*{box-sizing:border-box}body{font-family:TestSans,sans-serif;margin:0;background:#f3f0e9;color:#181a18;padding:40px;max-width:1500px;margin:auto}h1{font-size:clamp(28px,4vw,60px);letter-spacing:-.04em;margin:0}p{line-height:1.8;max-width:900px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid img{width:100%;display:block}a{color:inherit}footer{margin-top:40px;border-top:1px solid #ccc;padding-top:24px}#checks{font-size:14px;white-space:pre-wrap;background:#e5e9de;padding:20px;border-radius:5px}.fixture{font-size:40px;line-height:1.5;border-bottom:1px solid #ddd;margin:0}small{font-family:TestSans;font-size:15px}@media(max-width:850px){body{padding:20px}.grid{grid-template-columns:repeat(2,1fr)}}
+</style><h1>一句话，六种声音。</h1><p>字体先决定语气与字形，再决定排版及动画。以下是同一内容的六组静态选型样张；每片选择适合的一套系统继续发展，无需把所有方案都放进一支片。样张不证明动态阅读已经合格。</p><div class="grid">
+<a href="specimen-01.png"><img src="specimen-01.png" alt="特黑冲击"></a><a href="specimen-02.png"><img src="specimen-02.png" alt="宋黑编辑对比"></a><a href="specimen-03.png"><img src="specimen-03.png" alt="圆角中文与窄体数字"></a><a href="specimen-04.png"><img src="specimen-04.png" alt="圆体亲和"></a><a href="specimen-05.png"><img src="specimen-05.png" alt="书写情绪"></a><a href="specimen-06.png"><img src="specimen-06.png" alt="美术字动势"></a></div>
+<footer><h2>实际浏览器字体加载</h2><p>下面文字直接使用随项目保存的字体，关闭合成粗体。上面六张 PNG 使用同一批原始文件离线排版。圆体样张采用繁体字；粉圆不能默认覆盖简体文案。</p><div id="fixtures"></div><pre id="checks">检查中…</pre><p><a href="../../.agents/skills/motion-craft/references/typography-poster-pairings.md">研究与选型说明</a> · <a href="font-verification.json">字体版本和 SHA-256</a> · <a href="specimen-glyph-check.json">样张字形核查</a></p></footer>
+<script>
+const samples=[['TestSans',900,'让复杂 变清楚'],['TestSerif',800,'让复杂 变清楚'],['TestHuang',400,'让复杂 变清楚'],['TestHuninn',400,'讓複雜 變清楚'],['TestMa',400,'让复杂 变清楚'],['TestSmiley',400,'让复杂 变清楚'],['TestNunito',800,'Make it clear.'],['TestBarlow',700,'MAKE IT CLEAR 99.9%'],['TestBebas',400,'MAKE IT CLEAR']];
+const host=document.querySelector('#fixtures'); for (const [family,weight,text] of samples){const p=document.createElement('p');p.className='fixture';p.style.fontFamily=family;p.style.fontWeight=weight;p.style.fontSynthesis='none';p.textContent=text+' '; const s=document.createElement('small');s.textContent=family+' / '+weight;p.append(s);host.append(p)}
+(async()=>{window.fontReport=[];for(const [family,weight,text]of samples){try{const loaded=await document.fonts.load(`${weight} 40px ${family}`,text);window.fontReport.push({family,weight,loadedFaces:loaded.length,status:loaded.map(f=>f.status),check:document.fonts.check(`${weight} 40px ${family}`,text)});}catch(e){window.fontReport.push({family,error:String(e)})}}await document.fonts.ready;document.querySelector('#checks').textContent=JSON.stringify(window.fontReport,null,2)})();
+</script></html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Three.js deterministic rendering smoke test</title>
+<style>html,body{margin:0;background:#111}canvas{display:block}</style>
+<script type="module">
+import * as THREE from '/node_modules/three/build/three.module.js';
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(320, 180);
+renderer.setPixelRatio(1);
+document.body.append(renderer.domElement);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#142c48');
+const camera = new THREE.PerspectiveCamera(45, 320 / 180, 0.1, 100);
+camera.position.z = 5;
+const cube = new THREE.Mesh(new THREE.BoxGeometry(1.4, 1.4, 1.4), new THREE.MeshNormalMaterial());
+scene.add(cube);
+window.film = {
+  ready: true, duration: 1, fps: 12,
+  renderAt(seconds) {
+    cube.rotation.set(seconds * 0.8, seconds * 1.7, 0.15);
+    renderer.render(scene, camera);
+    const pixel = new Uint8Array(4);
+    renderer.getContext().readPixels(160, 90, 1, 1, renderer.getContext().RGBA, renderer.getContext().UNSIGNED_BYTE, pixel);
+    return [...pixel];
+  },
+};
+window.film.renderAt(0);
+</script>

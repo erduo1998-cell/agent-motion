@@ -1,0 +1,24 @@
+{
+  "name": "agent-motion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "setup": "node scripts/setup.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "read-stage": "node scripts/read-stage.mjs",
+    "test": "node scripts/test.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "package:check": "node scripts/package-release.mjs --check",
+    "package:release": "node scripts/package-release.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.0",
+    "playwright-core": "1.63.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "动效编排与空间设计"
+  short_description: "联合设计中英文动态排版、镜头空间、整段节奏与对象接力的跨引擎动效方法"
+  default_prompt: "请使用 $motion-craft，结合当前项目的语言、空间关系与声音条件，把主事件、动态排版和镜头衔接实现为完整动画，并按我的预览要求交付。"

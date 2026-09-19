@@ -1,0 +1,88 @@
+{
+  "observedAt": "2026-09-17",
+  "url": "http://127.0.0.1:8987/",
+  "method": "Cua browser DOM read of #checks after document.fonts.load and document.fonts.ready",
+  "checks": [
+    {
+      "family": "TestSans",
+      "weight": 900,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestSerif",
+      "weight": 800,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestHuang",
+      "weight": 400,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestHuninn",
+      "weight": 400,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestMa",
+      "weight": 400,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestSmiley",
+      "weight": 400,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestNunito",
+      "weight": 800,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestBarlow",
+      "weight": 700,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    },
+    {
+      "family": "TestBebas",
+      "weight": 400,
+      "loadedFaces": 1,
+      "status": [
+        "loaded"
+      ],
+      "check": true
+    }
+  ]
+}

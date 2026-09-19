@@ -1,0 +1,8 @@
+---
+description: Canonical project-local video production skills and portable toolchain
+alwaysApply: true
+---
+
+Read and follow the repository-root `AGENTS.md`. For video creation, revision or review, use the project-local skills it names, and fully read the applicable stage pages before doing that stage. Do not replace these rules with a globally installed skill.
+
+Use `docs/compatibility.md` for setup, browser/FFmpeg configuration and validation scope. Commands run from the repository root. Use the client's own filesystem, terminal and media inspection tools; no Codex connector is required. Follow the user's language and scope. Identify unavailable visual/audio checks instead of declaring an unchecked film complete.
