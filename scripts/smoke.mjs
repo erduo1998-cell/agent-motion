@@ -5,6 +5,7 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { startServer } from '../serve.mjs';
 import { launchBrowser } from './browser.mjs';
+import { mediaPath } from './media-tools.mjs';
 
 const output = await mkdtemp(path.join(tmpdir(), 'threejs smoke-'));
 let browser, server;
@@ -29,9 +30,9 @@ try {
   for (let frame = 0; frame < 12; frame++) await capture(frame / 12, `frame-${String(frame).padStart(4, '0')}.png`);
   assert.deepEqual(errors, [], 'Browser page errors');
   const filmPath = path.join(output, 'smoke.mp4');
-  const encode = spawnSync(process.env.FFMPEG_PATH || 'ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-framerate', '12', '-i', path.join(output, 'frame-%04d.png'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', filmPath], { encoding: 'utf8', windowsHide: true, timeout: 60000 });
+  const encode = spawnSync(mediaPath('ffmpeg'), ['-hide_banner', '-loglevel', 'error', '-y', '-framerate', '12', '-i', path.join(output, 'frame-%04d.png'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', filmPath], { encoding: 'utf8', windowsHide: true, timeout: 60000 });
   assert.equal(encode.status, 0, encode.error?.message || encode.stderr);
-  const probe = spawnSync(process.env.FFPROBE_PATH || 'ffprobe', ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', filmPath], { encoding: 'utf8', windowsHide: true, timeout: 10000 });
+  const probe = spawnSync(mediaPath('ffprobe'), ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', filmPath], { encoding: 'utf8', windowsHide: true, timeout: 10000 });
   assert.equal(probe.status, 0, probe.error?.message || probe.stderr);
   const metadata = JSON.parse(probe.stdout);
   const video = metadata.streams.find(stream => stream.codec_type === 'video');

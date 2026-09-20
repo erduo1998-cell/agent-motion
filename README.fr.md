@@ -50,37 +50,38 @@ Trois films approuvés par l’auteur, avec des timecodes source correspondants,
 
 ## Démarrer
 
-**1. Préparer l’environnement**
+**1. Télécharger et installer**
 
-Installez Node.js 22+, Python 3.10+ et FFmpeg / ffprobe, et rendez-les accessibles dans PATH. Ces commandes fonctionnent dans PowerShell et les shells POSIX ; setup télécharge Chromium.
+Il vous faut seulement **Node.js 22+ et un agent de programmation**. Dans le dépôt, choisissez **Code → Download ZIP**, puis décompressez le fichier ; Git n’est pas nécessaire. Ouvrez le dossier extrait et double-cliquez sur **`start.command` sous macOS** ou **`start.bat` sous Windows**. Sous Linux ou dans le terminal de l’agent, lancez :
 
 ```sh
-git clone https://github.com/erduo1998-cell/agent-motion.git
-cd agent-motion
-npm ci
-npm run setup
-npm run doctor
+node scripts/bootstrap.mjs
 ```
 
-**2. Transmettre les consignes à l’agent**
+`npm run onboard` lance le même programme d’installation. Il prépare les dépendances, un environnement Python dans le projet, Chromium, FFmpeg / ffprobe et le modèle de détourage, puis vérifie l’environnement et effectue un court essai de détourage. Le premier lancement nécessite une connexion internet : attendez sa fin. Vous n’avez pas à installer Python séparément ni à régler un modèle. [Guide détaillé et dépannage (anglais et chinois)](docs/getting-started.md#english)
 
-Placez votre vidéo et le SRT complet dans `inputs/`, ouvrez le dépôt dans votre agent de programmation et envoyez :
+**2. Confier les fichiers à l’agent**
 
-> Lis AGENTS.md et les deux Skills locaux du projet. Crée un film face caméra complet à partir de inputs/source.mp4 et inputs/source.srt. Préserve l’ordre et le minutage de la parole d’origine. Travaille dans work/my-first-film/. Termine toutes les étapes de production et inspecte le résultat réel. Livre le MP4 et le projet modifiable. Réponds en français.
+Placez la vidéo et le SRT complet dans `inputs/`, ouvrez tout le dossier extrait dans votre agent et envoyez :
+
+> Lis AGENTS.md, suis le guide d’installation si nécessaire, puis lis les deux Skills locaux du projet. Crée un film complet avec inputs/source.mp4 et inputs/source.srt. Avant la composition, prépare et vérifie un calque du présentateur détouré et synchronisé avec la vidéo d’origine. Préserve l’ordre et le minutage de la parole. Travaille dans work/my-first-film/, termine toutes les étapes et inspecte l’image et le son réels. Livre le MP4 et le projet modifiable. Réponds en français.
+
+**Le détourage est obligatoire pour les vidéos face caméra.** L’installation fournit une méthode locale fonctionnant sur CPU ; un calque déjà préparé et adapté, ou un autre outil compatible, peut la remplacer. Une carte graphique dédiée n’est pas nécessaire. La génération d’images reste facultative.
 
 **3. Voir le résultat**
 
-Lancez `npm run serve`, puis ouvrez la page du film créée par votre agent à l’adresse [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/). La racine du serveur ne contient pas de film prédéfini.
+Demandez à l’agent d’ouvrir le MP4 terminé et l’aperçu modifiable. Il peut lancer `npm run serve`, puis ouvrir la page qu’il a créée à [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/). La racine du serveur ne contient pas de film prédéfini.
 
 <details>
-<summary>Vérifier l’installation et le rendu</summary>
+<summary>Vérifications que l’agent peut effectuer</summary>
 
 ```sh
+npm run doctor -- --matting
 npm test
 npm run smoke
 ```
 
-Le test de bon fonctionnement réalise un véritable rendu Three.js → H.264. L’installation et la vérification ne font appel à aucun service de génération payant. La génération d’images et le détourage facultatifs dépendent des outils et licences dont vous disposez.
+Doctor vérifie l’environnement de détourage ; Smoke réalise un véritable rendu Three.js → H.264. Ces tests ne remplacent pas l’examen des contours de la personne et du film terminé. L’installation et ces vérifications locales n’appellent aucun service de génération payant.
 
 </details>
 
@@ -116,7 +117,7 @@ Un même auteur développe l’ouverture et le passage le plus difficile avant d
 
 **Agents** : Codex, Claude Code, Gemini CLI, Cursor et GitHub Copilot disposent d’instructions d’entrée vers les mêmes Skills locaux. Les autres agents peuvent lire `AGENTS.md` directement. Aucune API propre à Codex n’est requise. L’environnement doit permettre l’accès aux fichiers, au terminal, au navigateur et l’inspection audiovisuelle.
 
-**Plateformes** : les six tâches CI de Windows, macOS et Ubuntu × Node 22/24 ont réussi l’installation, les tests et le rendu réel. La production de films complets est attestée avec Codex ; les autres clients n’ont pas encore chacun fait l’objet d’un test indépendant de production d’un film entier. [Compatibilité et preuves des tests](docs/compatibility.md)
+**Plateformes** : les six tâches CI de Windows, macOS et Ubuntu × Node 22/24 ont validé les outils de rendu le 19 septembre 2026. Ce résultat précède le nouvel installateur et l’intégration du détourage ; consultez le registre des vérifications pour connaître leur portée réelle. La production de films complets est attestée avec Codex ; les autres clients n’ont pas encore chacun fait l’objet d’un test indépendant de production d’un film entier. [Compatibilité et preuves des tests](docs/compatibility.md)
 
 ## Pour aller plus loin
 

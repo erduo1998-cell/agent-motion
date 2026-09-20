@@ -20,7 +20,9 @@
     "release.config.json",
     "inputs/README.md",
     "COMMERCIAL-LICENSE.md",
-    "NOTICE"
+    "NOTICE",
+    "start.command",
+    "start.bat"
   ],
   "directories": [
     ".agents",

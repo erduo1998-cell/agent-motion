@@ -1,9 +1,16 @@
+import { existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 export const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 export function findPython() {
+  const managed = path.join(root, '.venv', process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
+  if (!process.env.PYTHON && existsSync(managed)) {
+    const result = spawnSync(managed, ['-c', 'import sys; sys.exit(0 if sys.version_info >= (3, 10) else 1)'], { encoding: 'utf8', timeout: 10000, windowsHide: true });
+    if (result.status !== 0) throw new Error('Project Python is not usable. Rerun node scripts/bootstrap.mjs to diagnose .venv.');
+    return { command: managed, prefix: [], executable: managed };
+  }
   const candidates = process.env.PYTHON
     ? [[process.env.PYTHON, []]]
     : process.platform === 'win32'

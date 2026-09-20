@@ -11,7 +11,10 @@
     "test": "node scripts/test.mjs",
     "smoke": "node scripts/smoke.mjs",
     "package:check": "node scripts/package-release.mjs --check",
-    "package:release": "node scripts/package-release.mjs"
+    "package:release": "node scripts/package-release.mjs",
+    "onboard": "node scripts/bootstrap.mjs",
+    "matte": "node scripts/matte.mjs",
+    "matting:smoke": "node scripts/matting-smoke.mjs"
   },
   "dependencies": {
     "three": "0.186.0",

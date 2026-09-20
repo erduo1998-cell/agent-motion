@@ -75,3 +75,12 @@ Three original README illustrations were produced with the built-in image-genera
 Following owner feedback, the README was reorganized after inspecting the rendered [Remotion](https://github.com/remotion-dev/remotion#readme) and [Nextra](https://github.com/shuding/nextra#readme) READMEs. The revision uses a single text alignment, compact navigation, early setup instructions and expandable detail instead of multiple heading levels and consecutive full-size artwork blocks. No reference-project art or copy was redistributed.
 
 The built-in image tool produced three Chinese artwork variants. Headings, process labels and explanatory captions were visually checked; project and technology names retain their original spelling. Original English assets remain available. Exact generation and text-correction prompts are recorded with the assets. Runtime code, Skills, showcase media and license terms were unchanged in this presentation revision.
+
+
+## First-run setup and required matting / 2026-09-20
+
+The beginner path now requires Node.js and a capable coding agent, then runs one project-local bootstrap. macOS and Windows have double-click launchers; the terminal entry works across supported platforms. It prepares the private Python environment, browser, missing media tools and the original RVM MobileNetV3 FP32 model. Downloads are separate from the source distribution; model and bootstrap executable checksums are pinned. The launchers preserve an incompatible existing environment and report how to recover instead of deleting it.
+
+Matting is required for talking-head packaging. The default CPU command produces silent, synchronized foreground and alpha videos plus timing metadata, refuses to overwrite an existing output directory, and retains the original source. The output uses source-time CFR sampling (variable-frame-rate inputs may be resampled). A successful tool check does not replace actual hair/hand/motion inspection. The external model retains upstream terms, and the noncommercial project license does not relicense it.
+
+Local checks passed for bootstrap branches, download integrity/failure handling, existing unit checks, environment diagnosis, real recurrent RVM inference, paired-video encoding/decoding and the existing Three.js render smoke. The hosted workflow now includes the new installation and matting path; consult the current Actions run rather than using old CI evidence for new behavior.

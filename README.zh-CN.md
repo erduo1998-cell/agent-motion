@@ -50,37 +50,38 @@
 
 ## 开始使用
 
-**1. 安装环境**
+**1. 下载，启动安装**
 
-准备 Node.js 22+、Python 3.10+、FFmpeg / ffprobe，并配置到 PATH。以下命令适用于 PowerShell 与 POSIX 终端；setup 会下载 Chromium。
+你只需要准备 **Node.js 22+ 和一个编程智能体**。在本仓库点击 **Code → Download ZIP**，下载后解压，不需要安装 Git。打开解压后的文件夹，macOS 双击 **`start.command`**，Windows 双击 **`start.bat`**。Linux 或智能体终端中运行：
 
 ```sh
-git clone https://github.com/erduo1998-cell/agent-motion.git
-cd agent-motion
-npm ci
-npm run setup
-npm run doctor
+node scripts/bootstrap.mjs
 ```
 
-**2. 交给智能体**
+`npm run onboard` 是同一个安装入口。它会准备项目依赖、项目内的 Python 环境、Chromium、FFmpeg / ffprobe 和人物抠像模型，再检查环境、试跑一小段抠像。首次需要联网，请等待完成；不用自己安装 Python，也不用调模型。[小白逐步教程与常见问题](docs/getting-started.md#中文)
 
-把原片和完整 SRT 放进 `inputs/`，用你熟悉的编程智能体打开项目目录，发送：
+**2. 把素材交给智能体**
 
-> 先读 AGENTS.md 和本项目两个本地 Skill。根据 inputs/source.mp4 与 inputs/source.srt 完成口播视频动效包装，保留原口播顺序和时间。在 work/my-first-film/ 制作，完成各阶段和实际成片检查，交付 MP4 及可编辑工程。
+把原片和完整 SRT 放进 `inputs/`，用编程智能体打开解压后的整个文件夹，发送：
+
+> 先读 AGENTS.md，按需完成安装指南，再读本项目两个本地 Skill。根据 inputs/source.mp4 与 inputs/source.srt 完成口播视频动效包装。先制作并检查与原片同步的人物抠像层，再进入合成；保留原口播顺序和时间。在 work/my-first-film/ 制作，完成各阶段和实际画面、声音检查，交付 MP4 及可编辑工程。
+
+**真人口播必须抠像。** 安装入口已提供可在 CPU 上运行的本地方案；可以替换成合格的现成人物层或其他兼容工具，不能跳过人物层。无需独立显卡；生图仍按需要选用。
 
 **3. 查看结果**
 
-运行 `npm run serve`，打开智能体创建的影片页面 [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/)。服务根地址没有预设成片。
+让智能体打开成片 MP4 和可编辑预览。它可以运行 `npm run serve`，打开自己创建的影片页面 [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/)。服务根地址没有预设成片。
 
 <details>
-<summary>验证安装与渲染</summary>
+<summary>智能体可执行的检查</summary>
 
 ```sh
+npm run doctor -- --matting
 npm test
 npm run smoke
 ```
 
-Smoke 会完成一次真实 Three.js → H.264 渲染。安装和验证不调用付费生成服务；可选生图、抠像按可用工具及许可配置。
+Doctor 检查抠像环境，Smoke 完成一次真实 Three.js → H.264 渲染；两者不能代替人物边缘与最终成片检查。安装和这些本地检查不调用付费生成服务。
 
 </details>
 
@@ -116,7 +117,7 @@ Smoke 会完成一次真实 Three.js → H.264 渲染。安装和验证不调用
 
 **智能体**：Codex、Claude Code、Gemini CLI、Cursor、GitHub Copilot 均有入口，共用本地 Skill。其他智能体可直接读取 `AGENTS.md`。核心不依赖 Codex 专属 API，宿主需支持文件、终端、浏览器与实际视听检查。
 
-**系统**：Windows、macOS、Ubuntu × Node 22/24，六项 CI 均通过安装、测试及真实渲染。完整影片已有 Codex 制作记录；其他客户端尚未逐一完成整片验证。[兼容性与实测证据](docs/compatibility.md)
+**系统**：Windows、macOS、Ubuntu × Node 22/24 的六项渲染工具链 CI 已于 2026 年 9 月 19 日通过；这份记录早于新安装器与抠像接入，后两者的实测范围请以验证记录为准。完整影片已有 Codex 制作记录；其他客户端尚未逐一完成整片验证。[兼容性与实测证据](docs/compatibility.md)
 
 ## 进一步了解
 

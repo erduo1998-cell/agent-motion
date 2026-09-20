@@ -50,37 +50,38 @@ Three owner-approved films with matching source timecodes, tracked soft-edged fa
 
 ## Get started
 
-**1. Set up**
+**1. Download and install**
 
-Install Node.js 22+, Python 3.10+ and FFmpeg / ffprobe on PATH. These commands work in PowerShell and POSIX shells; setup downloads Chromium.
+You only need **Node.js 22+ and a coding agent**. Download this repository with **Code → Download ZIP**, then extract it; Git is not required. Open the extracted folder and double-click **`start.command` on macOS** or **`start.bat` on Windows**. On Linux, or from your agent's terminal, run:
 
 ```sh
-git clone https://github.com/erduo1998-cell/agent-motion.git
-cd agent-motion
-npm ci
-npm run setup
-npm run doctor
+node scripts/bootstrap.mjs
 ```
+
+`npm run onboard` runs the same installer. It prepares the project dependencies, local Python environment, Chromium, FFmpeg / ffprobe and the person-matting model, then checks the environment and runs a short matting test. The first run needs an internet connection; let it finish. You do not need to install Python separately or tune a model. [Step-by-step guide and troubleshooting](docs/getting-started.md#english)
 
 **2. Give your agent the brief**
 
-Put your recording and complete SRT in `inputs/`, open the repository in your coding agent, and send:
+Put your recording and complete SRT in `inputs/`, open the extracted folder in your coding agent, and send:
 
-> Read AGENTS.md and the two project-local Skills. Create a complete talking-head film using inputs/source.mp4 and inputs/source.srt. Preserve the original speech order and timing. Work in work/my-first-film/. Complete every production stage and inspect the actual output. Deliver the MP4 and editable project. Respond in English.
+> Read AGENTS.md, follow the installation guide if needed, then read the two project-local Skills. Create a complete talking-head film using inputs/source.mp4 and inputs/source.srt. Prepare and verify a synchronized person cutout before composition; keep the original speech order and timing. Work in work/my-first-film/. Complete every production stage and inspect the actual picture and audio. Deliver the MP4 and editable project. Respond in English.
 
-**3. Preview the result**
+**Person matting is required for talking-head films.** The installer supplies a local CPU-capable method; a suitable existing person layer or another compatible tool can replace that method. A dedicated GPU is not required. Image generation remains optional.
 
-Run `npm run serve`, then open the film page created by your agent at [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/). The server root has no preset film.
+**3. View the result**
+
+Ask your agent to open the finished MP4 and editable preview. It can run `npm run serve` and open the film page it created at [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/). The server root has no preset film.
 
 <details>
-<summary>Verify installation and rendering</summary>
+<summary>Checks your agent can run</summary>
 
 ```sh
+npm run doctor -- --matting
 npm test
 npm run smoke
 ```
 
-The smoke check performs a real Three.js → H.264 render. Setup and verification do not call paid generation services. Optional image generation and matting depend on your available tools and licenses.
+Doctor checks the matting environment; the rendering smoke performs a real Three.js → H.264 render. Neither replaces reviewing the person edges and the finished film. Installation and these local checks do not call paid generation services.
 
 </details>
 
@@ -116,7 +117,7 @@ One continuous author develops the opening and hardest passage before expanding 
 
 **Agents**: Codex, Claude Code, Gemini CLI, Cursor and GitHub Copilot have entry instructions for the same local Skills. Other agents can read `AGENTS.md` directly. No Codex-specific API is required. Hosts need file, terminal, browser and audiovisual inspection capabilities.
 
-**Platforms**: all six Windows, macOS and Ubuntu × Node 22/24 CI jobs passed installation, tests and real rendering. Full-film production is evidenced in Codex; the other clients have not each completed an independent full-film test. [Compatibility and test evidence](docs/compatibility.md)
+**Platforms**: the six Windows, macOS and Ubuntu × Node 22/24 CI jobs passed the rendering toolchain checks on September 19, 2026. That record predates the new installer and matting setup; see the verification record for their tested scope. Full-film production is evidenced in Codex; the other clients have not each completed an independent full-film test. [Compatibility and test evidence](docs/compatibility.md)
 
 ## Explore further
 

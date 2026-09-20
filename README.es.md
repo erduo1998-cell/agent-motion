@@ -50,37 +50,38 @@ Tres películas aprobadas por el autor, con códigos de tiempo de origen coincid
 
 ## Empezar
 
-**1. Preparar el entorno**
+**1. Descargar e instalar**
 
-Instala Node.js 22+, Python 3.10+ y FFmpeg / ffprobe, y asegúrate de que estén en PATH. Estos comandos funcionan en PowerShell y shells POSIX; setup descarga Chromium.
+Solo necesitas **Node.js 22+ y un agente de programación**. En el repositorio, elige **Code → Download ZIP** y descomprime el archivo; no necesitas Git. Abre la carpeta extraída y haz doble clic en **`start.command` en macOS** o **`start.bat` en Windows**. En Linux o en la terminal del agente, ejecuta:
 
 ```sh
-git clone https://github.com/erduo1998-cell/agent-motion.git
-cd agent-motion
-npm ci
-npm run setup
-npm run doctor
+node scripts/bootstrap.mjs
 ```
 
-**2. Dar las indicaciones al agente**
+`npm run onboard` abre el mismo instalador. Prepara las dependencias, un entorno Python dentro del proyecto, Chromium, FFmpeg / ffprobe y el modelo para separar a la persona del fondo; después comprueba el entorno y realiza una prueba breve del recorte. La primera ejecución necesita internet: espera a que termine. No tienes que instalar Python por separado ni ajustar modelos. [Guía detallada y ayuda (inglés y chino)](docs/getting-started.md#english)
 
-Coloca la grabación y el SRT completo en `inputs/`, abre el repositorio en tu agente de programación y envía:
+**2. Entregar el material al agente**
 
-> Lee AGENTS.md y los dos Skills locales del proyecto. Crea una película completa de una persona hablando a cámara con inputs/source.mp4 e inputs/source.srt. Conserva el orden y los tiempos de la voz original. Trabaja en work/my-first-film/. Completa todas las etapas de producción y revisa el resultado real. Entrega el MP4 y el proyecto editable. Responde en español.
+Coloca la grabación y el SRT completo en `inputs/`, abre toda la carpeta extraída en tu agente y envía:
+
+> Lee AGENTS.md, completa la guía de instalación si hace falta y lee los dos Skills locales del proyecto. Crea una película completa con inputs/source.mp4 e inputs/source.srt. Antes de componer, prepara y revisa una capa de la persona separada del fondo y sincronizada con el original. Conserva el orden y los tiempos de la voz. Trabaja en work/my-first-film/, completa todas las etapas y revisa la imagen y el sonido reales. Entrega el MP4 y el proyecto editable. Responde en español.
+
+**Separar a la persona del fondo es obligatorio para los vídeos de una persona hablando a cámara.** El instalador proporciona un método local que funciona con CPU; puedes sustituirlo por una capa adecuada ya preparada u otra herramienta compatible. No necesitas una GPU dedicada. La generación de imágenes sigue siendo opcional.
 
 **3. Ver el resultado**
 
-Ejecuta `npm run serve` y abre la página de la película creada por el agente en [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/). La raíz del servidor no contiene una película predefinida.
+Pide al agente que abra el MP4 terminado y la vista previa editable. Puede ejecutar `npm run serve` y abrir la página que haya creado en [work/my-first-film/](http://127.0.0.1:8793/work/my-first-film/). La raíz del servidor no contiene una película predefinida.
 
 <details>
-<summary>Verificar la instalación y el renderizado</summary>
+<summary>Comprobaciones que puede ejecutar el agente</summary>
 
 ```sh
+npm run doctor -- --matting
 npm test
 npm run smoke
 ```
 
-La prueba de funcionamiento realiza un renderizado real Three.js → H.264. La instalación y la verificación no llaman a servicios de generación de pago. La generación de imágenes y el recorte de personas opcionales dependen de las herramientas y licencias disponibles.
+Doctor comprueba el entorno de recorte; Smoke realiza un renderizado real Three.js → H.264. Estas pruebas no sustituyen la revisión de los bordes de la persona y de la película terminada. La instalación y estas comprobaciones locales no llaman a servicios de generación de pago.
 
 </details>
 
@@ -116,7 +117,7 @@ Un mismo responsable creativo desarrolla la apertura y el pasaje más difícil a
 
 **Agentes**: Codex, Claude Code, Gemini CLI, Cursor y GitHub Copilot tienen instrucciones de entrada para los mismos Skills locales. Otros agentes pueden leer `AGENTS.md` directamente. No se requiere ninguna API exclusiva de Codex. El entorno necesita acceso a archivos, terminal, navegador e inspección audiovisual.
 
-**Plataformas**: los seis trabajos de CI de Windows, macOS y Ubuntu × Node 22/24 superaron la instalación, las pruebas y el renderizado real. Hay evidencia de producción de películas completas en Codex; aún no se ha completado una prueba independiente de una película entera en cada uno de los otros clientes. [Compatibilidad y pruebas](docs/compatibility.md)
+**Plataformas**: los seis trabajos de CI de Windows, macOS y Ubuntu × Node 22/24 superaron las pruebas del entorno de renderizado el 19 de septiembre de 2026. Ese registro es anterior al nuevo instalador y a la integración del recorte; consulta el registro para conocer su alcance probado. Hay evidencia de producción de películas completas en Codex; aún no se ha completado una prueba independiente de una película entera en cada uno de los otros clientes. [Compatibilidad y pruebas](docs/compatibility.md)
 
 ## Más información
 

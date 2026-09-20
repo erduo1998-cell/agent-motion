@@ -17,3 +17,6 @@ __pycache__/
 /artifacts/
 /playwright-report/
 /test-results/
+
+/.venv/
+/.runtime/

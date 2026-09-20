@@ -1,14 +1,24 @@
 import { spawnSync } from 'node:child_process';
-import { findPython } from './runtime.mjs';
+import { findPython, root, runPython } from './runtime.mjs';
+import path from 'node:path';
+import { mediaPath, mediaEnvironment } from './media-tools.mjs';
 import { launchBrowser } from './browser.mjs';
 const report = { platform: process.platform, arch: process.arch, checks: [] };
 function record(name, ok, detail) { report.checks.push({ name, ok, detail }); }
 record('node', Number(process.versions.node.split('.')[0]) >= 22, process.version);
 try { record('python', true, findPython().executable); } catch (error) { record('python', false, error.message); }
 for (const tool of ['ffmpeg', 'ffprobe']) {
-  const executable = process.env[tool.toUpperCase() + '_PATH'] || tool;
+  const executable = mediaPath(tool);
   const result = spawnSync(executable, ['-version'], { encoding: 'utf8', timeout: 10000, windowsHide: true });
   record(tool, result.status === 0, result.status === 0 ? result.stdout.split(/\r?\n/)[0] : `Not available: ${executable}. Install FFmpeg and reopen the terminal, or set ${tool.toUpperCase()}_PATH.`);
+}
+const encoders = spawnSync(mediaPath('ffmpeg'), ['-hide_banner', '-encoders'], { encoding: 'utf8', timeout: 10000, windowsHide: true });
+record('h264-encoder', encoders.status === 0 && /\blibx264\b/.test(encoders.stdout || ''), encoders.status === 0 && /\blibx264\b/.test(encoders.stdout || '') ? 'libx264 available' : 'Run npm run onboard, or choose an FFmpeg build with libx264.');
+if (process.argv.includes('--matting')) {
+  try {
+    const result = runPython(path.join(root, 'scripts', 'matte.py'), ['--check'], { env: mediaEnvironment(), stdio: 'pipe', encoding: 'utf8', timeout: 60000 });
+    record('rvm-matting', result.status === 0, result.status === 0 ? JSON.parse(result.stdout) : (result.stderr?.trim() || result.error?.message || 'Run npm run onboard.'));
+  } catch (error) { record('rvm-matting', false, error.message); }
 }
 let browser;
 try {
