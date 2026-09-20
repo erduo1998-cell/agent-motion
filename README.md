@@ -117,7 +117,7 @@ One continuous author develops the opening and hardest passage before expanding 
 
 **Agents**: Codex, Claude Code, Gemini CLI, Cursor and GitHub Copilot have entry instructions for the same local Skills. Other agents can read `AGENTS.md` directly. No Codex-specific API is required. Hosts need file, terminal, browser and audiovisual inspection capabilities.
 
-**Platforms**: the six Windows, macOS and Ubuntu × Node 22/24 CI jobs passed the rendering toolchain checks on September 19, 2026. That record predates the new installer and matting setup; see the verification record for their tested scope. Full-film production is evidenced in Codex; the other clients have not each completed an independent full-film test. [Compatibility and test evidence](docs/compatibility.md)
+**Platforms**: all six Windows, macOS and Ubuntu × Node 22/24 CI jobs passed automatic setup, real CPU matting and video-rendering checks on September 20, 2026. Full-film production is evidenced in Codex; the other clients have not each completed an independent full-film test. [Compatibility and test evidence](docs/compatibility.md)
 
 ## Explore further
 

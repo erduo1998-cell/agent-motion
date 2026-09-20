@@ -117,7 +117,7 @@ Un même auteur développe l’ouverture et le passage le plus difficile avant d
 
 **Agents** : Codex, Claude Code, Gemini CLI, Cursor et GitHub Copilot disposent d’instructions d’entrée vers les mêmes Skills locaux. Les autres agents peuvent lire `AGENTS.md` directement. Aucune API propre à Codex n’est requise. L’environnement doit permettre l’accès aux fichiers, au terminal, au navigateur et l’inspection audiovisuelle.
 
-**Plateformes** : les six tâches CI de Windows, macOS et Ubuntu × Node 22/24 ont validé les outils de rendu le 19 septembre 2026. Ce résultat précède le nouvel installateur et l’intégration du détourage ; consultez le registre des vérifications pour connaître leur portée réelle. La production de films complets est attestée avec Codex ; les autres clients n’ont pas encore chacun fait l’objet d’un test indépendant de production d’un film entier. [Compatibilité et preuves des tests](docs/compatibility.md)
+**Plateformes** : les six tâches CI de Windows, macOS et Ubuntu × Node 22/24 ont validé l’installation automatique, le détourage réel sur CPU et le rendu vidéo le 20 septembre 2026. La production de films complets est attestée avec Codex ; les autres clients n’ont pas encore chacun fait l’objet d’un test indépendant de production d’un film entier. [Compatibilité et preuves des tests](docs/compatibility.md)
 
 ## Pour aller plus loin
 

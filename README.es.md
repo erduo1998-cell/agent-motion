@@ -117,7 +117,7 @@ Un mismo responsable creativo desarrolla la apertura y el pasaje más difícil a
 
 **Agentes**: Codex, Claude Code, Gemini CLI, Cursor y GitHub Copilot tienen instrucciones de entrada para los mismos Skills locales. Otros agentes pueden leer `AGENTS.md` directamente. No se requiere ninguna API exclusiva de Codex. El entorno necesita acceso a archivos, terminal, navegador e inspección audiovisual.
 
-**Plataformas**: los seis trabajos de CI de Windows, macOS y Ubuntu × Node 22/24 superaron las pruebas del entorno de renderizado el 19 de septiembre de 2026. Ese registro es anterior al nuevo instalador y a la integración del recorte; consulta el registro para conocer su alcance probado. Hay evidencia de producción de películas completas en Codex; aún no se ha completado una prueba independiente de una película entera en cada uno de los otros clientes. [Compatibilidad y pruebas](docs/compatibility.md)
+**Plataformas**: los seis trabajos de CI de Windows, macOS y Ubuntu × Node 22/24 superaron las pruebas de instalación automática, recorte real en CPU y renderizado de vídeo el 20 de septiembre de 2026. Hay evidencia de producción de películas completas en Codex; aún no se ha completado una prueba independiente de una película entera en cada uno de los otros clientes. [Compatibilidad y pruebas](docs/compatibility.md)
 
 ## Más información
 

@@ -117,7 +117,7 @@ Doctor 检查抠像环境，Smoke 完成一次真实 Three.js → H.264 渲染�
 
 **智能体**：Codex、Claude Code、Gemini CLI、Cursor、GitHub Copilot 均有入口，共用本地 Skill。其他智能体可直接读取 `AGENTS.md`。核心不依赖 Codex 专属 API，宿主需支持文件、终端、浏览器与实际视听检查。
 
-**系统**：Windows、macOS、Ubuntu × Node 22/24 的六项渲染工具链 CI 已于 2026 年 9 月 19 日通过；这份记录早于新安装器与抠像接入，后两者的实测范围请以验证记录为准。完整影片已有 Codex 制作记录；其他客户端尚未逐一完成整片验证。[兼容性与实测证据](docs/compatibility.md)
+**系统**：Windows、macOS、Ubuntu × Node 22/24 的六组 CI 已于 2026 年 9 月 20 日全部通过自动安装、真实 CPU 抠像和视频渲染检查。完整影片已有 Codex 制作记录；其他客户端尚未逐一完成整片验证。[兼容性与实测证据](docs/compatibility.md)
 
 ## 进一步了解
 
