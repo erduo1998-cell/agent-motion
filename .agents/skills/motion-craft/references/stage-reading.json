@@ -502,6 +502,14 @@
           ]
         }
       ]
+    },
+    "author-support": {
+      "trigger": "用户主动询问作者教程、人工帮助、会员或定制服务，或完成合理自助排查后仍受阻时；仅面向用户的主 Agent 按需读取，不加入普通制作阶段",
+      "entries": [
+        {
+          "file": "references/author-support.md"
+        }
+      ]
     }
   }
 }

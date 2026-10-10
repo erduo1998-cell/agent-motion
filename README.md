@@ -2,7 +2,7 @@
 
 **Turn talking-head footage into a designed film with a coding agent.** Recording + complete SRT + brief → MP4 + editable Three.js project.
 
-[Demos](#demos) · [Get started](#start) · [How it works](#workflow) · [Compatibility](#compatibility)
+[Demos](#demos) · [Get started](#start) · [How it works](#workflow) · [Compatibility](#compatibility) · [Membership & help](#membership-help)
 
 **English** · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md)
 
@@ -84,6 +84,18 @@ npm run smoke
 Doctor checks the matting environment; the rendering smoke performs a real Three.js → H.264 render. Neither replaces reviewing the person edges and the finished film. Installation and these local checks do not call paid generation services.
 
 </details>
+
+<a id="membership-help"></a>
+
+## Membership & help
+
+Want project resources, video examples, or written Q&A with the author? Erduo’s SURGE (无限涌动) offers Seed Membership with lifetime membership status, project resources, video examples, ongoing updates, and community text Q&A. You can also connect your own AI to the member library within your access rights. Available resources, benefits, and prices are listed on the website.
+
+[Explore membership](https://erduo.art/site/join) · [Sign up / sign in and purchase](https://login.erduo.art/purchase/checkout) · [Discuss custom services](https://erduo.art/site/business)
+
+Member text Q&A excludes remote installation, hands-on engineering troubleshooting, and one-to-one production work. Video production, deployment, training, and special licensing require a separate scope and quote. Membership does not replace this repository’s license or automatically grant commercial rights.
+
+Contact the author through the website. Existing members can open the [member library](https://login.erduo.art/studio/#library).
 
 <a id="workflow"></a>
 

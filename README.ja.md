@@ -2,7 +2,7 @@
 
 **コーディングエージェントで、話すだけの動画を演出のある作品に。** 元動画 + 完全な SRT + 制作意図 → MP4 + 編集可能な Three.js プロジェクト。
 
-[作品比較](#demos) · [はじめる](#start) · [制作の流れ](#workflow) · [互換性](#compatibility)
+[作品比較](#demos) · [はじめる](#start) · [制作の流れ](#workflow) · [互換性](#compatibility) · [メンバーシップと相談](#membership-help)
 
 [English](README.md) · [简体中文](README.zh-CN.md) · **日本語** · [Español](README.es.md) · [Français](README.fr.md)
 
@@ -84,6 +84,18 @@ npm run smoke
 Doctor は切り抜き環境を確認し、Smoke は Three.js → H.264 の実際のレンダリングを行います。人物の輪郭と完成動画の確認は別途必要です。インストールとローカル検証は有料生成サービスを呼び出しません。
 
 </details>
+
+<a id="membership-help"></a>
+
+## メンバーシップと相談
+
+プロジェクト資料、動画事例、作者へのテキストでの質問をお求めの方へ。作者 Erduo の「无限涌动 SURGE」では、会員資格が無期限のシードメンバーシップを提供しています。プロジェクト資料、動画事例、継続的な更新、コミュニティでのテキスト Q&A に加え、自分の AI を権限の範囲内で会員資料ライブラリに接続できます。資料、特典、価格はウェブサイトをご確認ください。
+
+[会員特典を見る](https://erduo.art/site/join) · [登録／ログインして購入](https://login.erduo.art/purchase/checkout) · [個別サービスを相談](https://erduo.art/site/business)
+
+会員向けテキスト Q&A に、リモートインストール、技術的な問題の調査代行、マンツーマンの制作代行は含まれません。動画制作、導入、研修、特別な利用許諾は、別途範囲と見積もりを相談してください。会員資格は本リポジトリのライセンスに代わるものではなく、商用利用権を自動的に付与するものでもありません。
+
+作者への連絡はウェブサイトから可能です。既存会員は[会員資料ライブラリ](https://login.erduo.art/studio/#library)をご利用ください。
 
 <a id="workflow"></a>
 

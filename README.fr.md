@@ -2,7 +2,7 @@
 
 **Transformez une vidéo face caméra en un film mis en scène avec un agent de programmation.** Vidéo + SRT complet + consignes → MP4 + projet Three.js modifiable.
 
-[Démos](#demos) · [Démarrer](#start) · [Fonctionnement](#workflow) · [Compatibilité](#compatibility)
+[Démos](#demos) · [Démarrer](#start) · [Fonctionnement](#workflow) · [Compatibilité](#compatibility) · [Adhésion et aide](#membership-help)
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · [Español](README.es.md) · **Français**
 
@@ -84,6 +84,18 @@ npm run smoke
 Doctor vérifie l’environnement de détourage ; Smoke réalise un véritable rendu Three.js → H.264. Ces tests ne remplacent pas l’examen des contours de la personne et du film terminé. L’installation et ces vérifications locales n’appellent aucun service de génération payant.
 
 </details>
+
+<a id="membership-help"></a>
+
+## Adhésion et aide
+
+Vous cherchez des ressources de projet, des exemples vidéo ou des réponses écrites de l’auteur ? SURGE (无限涌动), créé par Erduo, propose une adhésion Seed avec un statut de membre permanent, des ressources de projets, des exemples vidéo, des mises à jour continues et des échanges écrits dans la communauté. Vous pouvez aussi connecter votre propre IA à la bibliothèque des membres dans la limite de vos droits d’accès. Les ressources, avantages et tarifs sont précisés sur le site.
+
+[Découvrir l’adhésion](https://erduo.art/site/join) · [S’inscrire / se connecter et acheter](https://login.erduo.art/purchase/checkout) · [Discuter d’une prestation](https://erduo.art/site/business)
+
+Les échanges écrits n’incluent pas l’installation à distance, la prise en charge du dépannage technique ni la réalisation individuelle sur commande. La production vidéo, le déploiement, la formation et les licences spécifiques font l’objet d’un périmètre et d’un devis distincts. L’adhésion ne remplace pas la licence de ce dépôt et n’accorde pas automatiquement de droits commerciaux.
+
+Contactez l’auteur depuis le site. Les membres peuvent accéder directement à la [bibliothèque des membres](https://login.erduo.art/studio/#library).
 
 <a id="workflow"></a>
 

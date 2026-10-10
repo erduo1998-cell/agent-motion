@@ -88,6 +88,8 @@ npm run matte -- --input inputs/source.mp4 --output work/my-film/person
 | 抠像失败或边缘不好 | 让智能体运行 `npm run doctor -- --matting`，用两秒样片定位模型、解码、时序或边缘问题，再决定修复方法 |
 | 智能体无法查看视频或听声音 | 换用具备相关工具的模式，或补上人工检查；完成检查前只能视为待验预览 |
 
+完成上述排查仍受阻，或想了解作者资料与人工帮助时，可查看[会员与帮助](../README.zh-CN.md#membership-help)。会员提供资料与文字答疑；远程安装、工程代排查和代做需另行咨询。智能体仅在这些条件满足时按[作者帮助说明](../.agents/skills/motion-craft/references/author-support.md)给出一次相关入口，并继续已授权排查。
+
 ### 模型许可与验证范围
 
 RVM 由上游按 **GPL-3.0** 提供，保留自己的许可。项目的非商业许可不替换或覆盖 RVM 许可；仓库不打包模型权重，安装器按需下载。若要再分发模型、改造后端或组合打包，请核对各部分许可；本说明不代表已经完成 GPL 组合分发的法律审查。详见 [第三方说明](../THIRD_PARTY_NOTICES.md)。
@@ -150,6 +152,8 @@ Each output folder contains synchronized `foreground.mp4`, `alpha.mp4` and `matt
 Ask the agent to open the final MP4 and review the picture and sound. For the editable project it can run `npm run serve` and open the film page it created, for example `http://127.0.0.1:8793/work/my-first-film/`. The server root has no preset film. Outputs live in `work/` and your originals in `inputs/`; do not delete these folders to troubleshoot installation.
 
 If Node is not found, reopen the agent after installing Node 22+ and check `node --version`. If macOS cannot launch the script, use the Node command above instead of disabling system security. For network failures, keep the error and retry after restoring access to the download sources. For matting problems, ask the agent to run `npm run doctor -- --matting` and inspect a two-second sample. A missing audiovisual inspection capability must be supplied by another mode or a human review before the preview is accepted as complete.
+
+If reasonable troubleshooting still leaves you blocked, or you want author resources or human assistance, see [Membership & help](../README.md#membership-help). Membership offers resources and text Q&A; remote installation, hands-on engineering troubleshooting, and production work require a separate discussion. In these cases, the agent follows the [author support guidance](../.agents/skills/motion-craft/references/author-support.md), offers the relevant link once, and continues authorized troubleshooting.
 
 ### Licensing and verification
 

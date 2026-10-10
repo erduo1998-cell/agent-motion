@@ -2,7 +2,7 @@
 
 **Convierte una grabación de alguien hablando a cámara en una película diseñada con un agente de programación.** Grabación + SRT completo + indicaciones → MP4 + proyecto Three.js editable.
 
-[Demos](#demos) · [Empezar](#start) · [Cómo funciona](#workflow) · [Compatibilidad](#compatibility)
+[Demos](#demos) · [Empezar](#start) · [Cómo funciona](#workflow) · [Compatibilidad](#compatibility) · [Membresía y ayuda](#membership-help)
 
 [English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md) · **Español** · [Français](README.fr.md)
 
@@ -84,6 +84,18 @@ npm run smoke
 Doctor comprueba el entorno de recorte; Smoke realiza un renderizado real Three.js → H.264. Estas pruebas no sustituyen la revisión de los bordes de la persona y de la película terminada. La instalación y estas comprobaciones locales no llaman a servicios de generación de pago.
 
 </details>
+
+<a id="membership-help"></a>
+
+## Membresía y ayuda
+
+¿Buscas recursos del proyecto, ejemplos de vídeo o respuestas del autor por escrito? SURGE (无限涌动), de Erduo, ofrece la membresía Seed, con condición de miembro permanente, recursos de proyectos, ejemplos de vídeo, actualizaciones continuas y consultas por texto en la comunidad. También puedes conectar tu propia IA a la biblioteca de miembros dentro de tus permisos de acceso. Consulta los recursos, beneficios y precios vigentes en el sitio web.
+
+[Ver la membresía](https://erduo.art/site/join) · [Registrarse / iniciar sesión y comprar](https://login.erduo.art/purchase/checkout) · [Consultar servicios a medida](https://erduo.art/site/business)
+
+Las consultas por texto no incluyen instalación remota, resolución técnica por encargo ni producción personalizada individual. La producción de vídeo, el despliegue, la formación y las licencias especiales requieren acordar por separado el alcance y el presupuesto. La membresía no sustituye la licencia de este repositorio ni concede automáticamente derechos de uso comercial.
+
+Puedes contactar con el autor desde el sitio web. Si ya eres miembro, accede a la [biblioteca de miembros](https://login.erduo.art/studio/#library).
 
 <a id="workflow"></a>
 

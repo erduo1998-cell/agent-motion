@@ -2,7 +2,7 @@
 
 **让智能体，把口播做成动效视频。** 原片 + 完整 SRT + 制作要求 → MP4 + 可编辑 Three.js 工程。
 
-[看效果](#demos) · [开始使用](#start) · [制作方法](#workflow) · [兼容性](#compatibility)
+[看效果](#demos) · [开始使用](#start) · [制作方法](#workflow) · [兼容性](#compatibility) · [会员与帮助](#membership-help)
 
 [English](README.md) · **简体中文** · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md)
 
@@ -84,6 +84,18 @@ npm run smoke
 Doctor 检查抠像环境，Smoke 完成一次真实 Three.js → H.264 渲染；两者不能代替人物边缘与最终成片检查。安装和这些本地检查不调用付费生成服务。
 
 </details>
+
+<a id="membership-help"></a>
+
+## 会员与帮助
+
+需要项目资料、视频案例或作者文字答疑？作者耳朵的「无限涌动 SURGE」提供永久种子会员，包含项目资料、视频案例、持续更新与社群文字答疑，也支持将自己的 AI 接入有权使用的会员资料库。具体资料、权益和价格以网站为准。
+
+[了解会员权益](https://erduo.art/site/join) · [注册／登录并购买](https://login.erduo.art/purchase/checkout) · [咨询定制服务](https://erduo.art/site/business)
+
+会员文字答疑不包含远程安装、工程代排查或一对一代做；视频包装、部署、培训及专项授权需另行沟通范围与报价。会员资格不替代本仓库许可证，也不自动授予商业使用权。
+
+可通过网站联系作者；已是会员可直接进入[会员资料库](https://login.erduo.art/studio/#library)。
 
 <a id="workflow"></a>
 
